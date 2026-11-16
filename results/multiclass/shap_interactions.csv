@@ -1,0 +1,1438 @@
+stage,rank,feature_a,feature_b,mean_abs_interaction
+T0,1,Course,Age at enrollment,0.05341
+T0,2,Previous qualification (grade),Age at enrollment,0.03915
+T0,3,Course,Mother's qualification,0.03616
+T0,4,Marital status,Age at enrollment,0.02922
+T0,5,Course,Gender,0.02885
+T0,6,Previous qualification (grade),Admission grade,0.02836
+T0,7,Scholarship holder,Age at enrollment,0.02806
+T0,8,Course,Unemployment rate,0.02577
+T0,9,Course,Previous qualification (grade),0.02468
+T0,10,Daytime/evening attendance,Age at enrollment,0.02416
+T0,11,Gender,Scholarship holder,0.02280
+T0,12,Application mode,Age at enrollment,0.02277
+T0,13,Mother's occupation,Father's occupation,0.02252
+T0,14,Father's qualification,Unemployment rate,0.02191
+T0,15,Mother's occupation,Unemployment rate,0.02184
+T0,16,Application mode,Admission grade,0.02088
+T0,17,Father's qualification,Father's occupation,0.02052
+T0,18,Father's qualification,Scholarship holder,0.02029
+T0,19,Course,Inflation rate,0.02016
+T0,20,Admission grade,Scholarship holder,0.01986
+T0,21,Application mode,Gender,0.01942
+T0,22,Course,Admission grade,0.01837
+T0,23,Mother's occupation,Age at enrollment,0.01781
+T0,24,Previous qualification (grade),Unemployment rate,0.01773
+T0,25,Mother's occupation,Admission grade,0.01755
+T0,26,Mother's qualification,Admission grade,0.01736
+T0,27,Application mode,Previous qualification (grade),0.01685
+T0,28,Previous qualification (grade),Mother's occupation,0.01664
+T0,29,Age at enrollment,Unemployment rate,0.01570
+T0,30,Previous qualification (grade),Father's occupation,0.01542
+T0,31,Mother's occupation,GDP,0.01529
+T0,32,Admission grade,Age at enrollment,0.01498
+T0,33,Application order,Previous qualification (grade),0.01496
+T0,34,Mother's qualification,Age at enrollment,0.01481
+T0,35,Father's occupation,Admission grade,0.01479
+T0,36,Application mode,Course,0.01478
+T0,37,Father's occupation,Inflation rate,0.01430
+T0,38,Previous qualification (grade),Father's qualification,0.01416
+T0,39,Application mode,Unemployment rate,0.01397
+T0,40,Displaced,Scholarship holder,0.01388
+T0,41,Admission grade,GDP,0.01351
+T0,42,Mother's occupation,Scholarship holder,0.01343
+T0,43,Application mode,Father's occupation,0.01313
+T0,44,Course,Father's qualification,0.01256
+T0,45,Scholarship holder,Unemployment rate,0.01246
+T0,46,Course,Father's occupation,0.01209
+T0,47,Application mode,Scholarship holder,0.01189
+T0,48,Previous qualification (grade),GDP,0.01185
+T0,49,Application mode,Mother's occupation,0.01182
+T0,50,Course,Mother's occupation,0.01177
+T0,51,Course,GDP,0.01141
+T0,52,Application mode,Inflation rate,0.01131
+T0,53,Mother's qualification,GDP,0.01111
+T0,54,Gender,Age at enrollment,0.01081
+T0,55,Previous qualification (grade),Mother's qualification,0.01075
+T0,56,Father's qualification,Admission grade,0.01071
+T0,57,Application order,Displaced,0.01070
+T0,58,Course,Scholarship holder,0.01046
+T0,59,Previous qualification (grade),Scholarship holder,0.01030
+T0,60,Age at enrollment,GDP,0.00973
+T0,61,Previous qualification (grade),Inflation rate,0.00958
+T0,62,Application order,Course,0.00948
+T0,63,Application mode,Application order,0.00911
+T0,64,Previous qualification,Unemployment rate,0.00893
+T0,65,Previous qualification (grade),Gender,0.00887
+T0,66,Father's occupation,Age at enrollment,0.00879
+T0,67,Course,Displaced,0.00859
+T0,68,Daytime/evening attendance,Previous qualification (grade),0.00858
+T0,69,Admission grade,Gender,0.00830
+T0,70,Mother's qualification,Father's occupation,0.00826
+T0,71,Displaced,Unemployment rate,0.00817
+T0,72,Mother's qualification,Mother's occupation,0.00811
+T0,73,Application order,Admission grade,0.00811
+T0,74,Father's qualification,GDP,0.00787
+T0,75,Mother's qualification,Father's qualification,0.00779
+T0,76,Admission grade,Unemployment rate,0.00758
+T0,77,Mother's occupation,Gender,0.00758
+T0,78,Mother's qualification,Scholarship holder,0.00749
+T0,79,Previous qualification,Previous qualification (grade),0.00736
+T0,80,Marital status,Mother's occupation,0.00704
+T0,81,Application order,Age at enrollment,0.00694
+T0,82,Father's occupation,Unemployment rate,0.00686
+T0,83,Previous qualification,Mother's qualification,0.00684
+T0,84,Father's occupation,Scholarship holder,0.00683
+T0,85,Father's qualification,Age at enrollment,0.00678
+T0,86,Application mode,GDP,0.00665
+T0,87,Scholarship holder,GDP,0.00663
+T0,88,Marital status,Previous qualification (grade),0.00653
+T0,89,Father's occupation,GDP,0.00653
+T0,90,Mother's occupation,Inflation rate,0.00645
+T0,91,Father's qualification,Displaced,0.00629
+T0,92,Mother's qualification,Unemployment rate,0.00613
+T0,93,Admission grade,Inflation rate,0.00598
+T0,94,Father's qualification,Mother's occupation,0.00591
+T0,95,Application order,Scholarship holder,0.00589
+T0,96,Marital status,Father's qualification,0.00581
+T0,97,Application order,Mother's qualification,0.00575
+T0,98,Previous qualification,GDP,0.00575
+T0,99,Application order,Father's occupation,0.00569
+T0,100,Previous qualification,Father's occupation,0.00552
+T0,101,Application order,Unemployment rate,0.00547
+T0,102,Father's qualification,Inflation rate,0.00536
+T0,103,Previous qualification (grade),Displaced,0.00534
+T0,104,Application mode,Daytime/evening attendance,0.00524
+T0,105,Application mode,Mother's qualification,0.00500
+T0,106,Age at enrollment,Inflation rate,0.00478
+T0,107,Marital status,Admission grade,0.00472
+T0,108,Displaced,Age at enrollment,0.00458
+T0,109,Application order,Inflation rate,0.00423
+T0,110,Father's occupation,Gender,0.00406
+T0,111,Daytime/evening attendance,Scholarship holder,0.00399
+T0,112,Application mode,Previous qualification,0.00383
+T0,113,Mother's qualification,Inflation rate,0.00377
+T0,114,Course,Previous qualification,0.00366
+T0,115,Application order,GDP,0.00364
+T0,116,Admission grade,Displaced,0.00363
+T0,117,Marital status,Mother's qualification,0.00358
+T0,118,Daytime/evening attendance,Displaced,0.00342
+T0,119,Daytime/evening attendance,Mother's qualification,0.00340
+T0,120,Previous qualification,Age at enrollment,0.00329
+T0,121,Father's occupation,Displaced,0.00329
+T0,122,Marital status,Course,0.00326
+T0,123,Scholarship holder,Inflation rate,0.00321
+T0,124,Application mode,Displaced,0.00309
+T0,125,Application mode,Father's qualification,0.00298
+T0,126,Application order,Father's qualification,0.00295
+T0,127,Application order,Gender,0.00289
+T0,128,Previous qualification,Admission grade,0.00285
+T0,129,Daytime/evening attendance,Unemployment rate,0.00268
+T0,130,Previous qualification,Gender,0.00261
+T0,131,Previous qualification,Father's qualification,0.00251
+T0,132,Mother's qualification,Displaced,0.00250
+T0,133,Nacionality,Age at enrollment,0.00247
+T0,134,Application order,Mother's occupation,0.00231
+T0,135,Marital status,Daytime/evening attendance,0.00211
+T0,136,Previous qualification,Mother's occupation,0.00199
+T0,137,Gender,Inflation rate,0.00193
+T0,138,Nacionality,Mother's occupation,0.00182
+T0,139,Displaced,Inflation rate,0.00182
+T0,140,Mother's occupation,Displaced,0.00181
+T0,141,Marital status,Unemployment rate,0.00177
+T0,142,Daytime/evening attendance,Inflation rate,0.00172
+T0,143,Previous qualification,Displaced,0.00172
+T0,144,Gender,GDP,0.00161
+T0,145,Previous qualification,Inflation rate,0.00158
+T0,146,Daytime/evening attendance,Father's occupation,0.00151
+T0,147,Daytime/evening attendance,Admission grade,0.00143
+T0,148,Nacionality,Father's occupation,0.00142
+T0,149,Course,Daytime/evening attendance,0.00141
+T0,150,Mother's qualification,Gender,0.00140
+T0,151,Father's qualification,Gender,0.00131
+T0,152,Marital status,Application mode,0.00129
+T0,153,Displaced,GDP,0.00129
+T0,154,Daytime/evening attendance,Mother's occupation,0.00124
+T0,155,Gender,Unemployment rate,0.00121
+T0,156,Marital status,Previous qualification,0.00120
+T0,157,Unemployment rate,Inflation rate,0.00117
+T0,158,Unemployment rate,GDP,0.00099
+T0,159,Course,Nacionality,0.00096
+T0,160,Nacionality,Mother's qualification,0.00094
+T0,161,Marital status,Inflation rate,0.00092
+T0,162,Educational special needs,Gender,0.00090
+T0,163,Marital status,Gender,0.00085
+T0,164,Nacionality,Gender,0.00083
+T0,165,Previous qualification,Scholarship holder,0.00082
+T0,166,Daytime/evening attendance,GDP,0.00078
+T0,167,Application order,Previous qualification,0.00077
+T0,168,Marital status,GDP,0.00071
+T0,169,Nacionality,Admission grade,0.00068
+T0,170,Marital status,Father's occupation,0.00067
+T0,171,Application mode,Nacionality,0.00058
+T0,172,Age at enrollment,International,0.00054
+T0,173,Application order,Daytime/evening attendance,0.00052
+T0,174,Daytime/evening attendance,Previous qualification,0.00050
+T0,175,Nacionality,GDP,0.00047
+T0,176,Displaced,Gender,0.00047
+T0,177,International,GDP,0.00040
+T0,178,Nacionality,Unemployment rate,0.00037
+T0,179,Marital status,Scholarship holder,0.00036
+T0,180,Nacionality,Father's qualification,0.00033
+T0,181,Inflation rate,GDP,0.00028
+T0,182,Educational special needs,Inflation rate,0.00025
+T0,183,Previous qualification (grade),Nacionality,0.00023
+T0,184,Marital status,Displaced,0.00022
+T0,185,Course,Educational special needs,0.00021
+T0,186,Mother's occupation,International,0.00020
+T0,187,Father's occupation,Educational special needs,0.00016
+T0,188,Daytime/evening attendance,Gender,0.00015
+T0,189,Application order,Nacionality,0.00015
+T0,190,Educational special needs,Age at enrollment,0.00012
+T0,191,Marital status,Application order,0.00012
+T0,192,Previous qualification (grade),Educational special needs,0.00010
+T0,193,Application order,Educational special needs,0.00010
+T0,194,Nacionality,Scholarship holder,0.00009
+T0,195,Daytime/evening attendance,Father's qualification,0.00009
+T0,196,Nacionality,Inflation rate,0.00008
+T0,197,Educational special needs,Unemployment rate,0.00007
+T0,198,Father's qualification,Educational special needs,0.00005
+T0,199,Admission grade,Educational special needs,0.00003
+T0,200,Mother's occupation,Educational special needs,0.00003
+T0,201,Daytime/evening attendance,Nacionality,0.00003
+T0,202,Father's occupation,International,0.00002
+T0,203,Previous qualification,Nacionality,0.00002
+T0,204,Marital status,Nacionality,0.00002
+T0,205,Daytime/evening attendance,Educational special needs,0.00001
+T0,206,Previous qualification (grade),International,0.00001
+T0,207,Nacionality,Educational special needs,0.00001
+T0,208,Daytime/evening attendance,International,0.00000
+T0,209,Course,International,0.00000
+T0,210,Application order,International,0.00000
+T0,211,Application mode,International,0.00000
+T0,212,Marital status,International,0.00000
+T0,213,Marital status,Educational special needs,0.00000
+T0,214,Application mode,Educational special needs,0.00000
+T0,215,Nacionality,Displaced,0.00000
+T0,216,Father's qualification,International,0.00000
+T0,217,Nacionality,International,0.00000
+T0,218,Mother's qualification,Educational special needs,0.00000
+T0,219,Mother's qualification,International,0.00000
+T0,220,Previous qualification,Educational special needs,0.00000
+T0,221,Previous qualification,International,0.00000
+T0,222,Displaced,Educational special needs,0.00000
+T0,223,Admission grade,International,0.00000
+T0,224,Gender,International,0.00000
+T0,225,Educational special needs,GDP,0.00000
+T0,226,Educational special needs,Scholarship holder,0.00000
+T0,227,Educational special needs,International,0.00000
+T0,228,Displaced,International,0.00000
+T0,229,Scholarship holder,International,0.00000
+T0,230,International,Inflation rate,0.00000
+T0,231,International,Unemployment rate,0.00000
+T1,1,Age at enrollment,Approval ratio 1st sem,0.07333
+T1,2,GDP,Tuition fees up to date,0.06615
+T1,3,Tuition fees up to date,Approval ratio 1st sem,0.05375
+T1,4,Displaced,Approval ratio 1st sem,0.04736
+T1,5,Course,Approval ratio 1st sem,0.04606
+T1,6,Admission grade,Approval ratio 1st sem,0.04202
+T1,7,Curricular units 1st sem (enrolled),Approval ratio 1st sem,0.03394
+T1,8,Gender,Approval ratio 1st sem,0.03336
+T1,9,Debtor,Approval ratio 1st sem,0.03104
+T1,10,Admission grade,GDP,0.02896
+T1,11,Scholarship holder,Approval ratio 1st sem,0.02875
+T1,12,Application mode,Admission grade,0.02873
+T1,13,Unemployment rate,Curricular units 1st sem (grade),0.02763
+T1,14,Course,Curricular units 1st sem (grade),0.02757
+T1,15,Father's qualification,Father's occupation,0.02733
+T1,16,Curricular units 1st sem (enrolled),Curricular units 1st sem (grade),0.02662
+T1,17,Father's occupation,Admission grade,0.02494
+T1,18,Course,Curricular units 1st sem (evaluations),0.02377
+T1,19,Previous qualification (grade),Displaced,0.02363
+T1,20,Previous qualification (grade),Unemployment rate,0.02322
+T1,21,Course,Gender,0.02294
+T1,22,Mother's occupation,Father's occupation,0.02217
+T1,23,Father's occupation,Inflation rate,0.02211
+T1,24,Curricular units 1st sem (enrolled),Curricular units 1st sem (evaluations),0.02123
+T1,25,Curricular units 1st sem (evaluations),Approval ratio 1st sem,0.02097
+T1,26,Tuition fees up to date,Curricular units 1st sem (grade),0.02096
+T1,27,Curricular units 1st sem (grade),Approval ratio 1st sem,0.02078
+T1,28,GDP,Debtor,0.02035
+T1,29,Previous qualification (grade),Tuition fees up to date,0.02022
+T1,30,Gender,Curricular units 1st sem (evaluations),0.02012
+T1,31,Course,Displaced,0.01939
+T1,32,Age at enrollment,Curricular units 1st sem (approved),0.01862
+T1,33,Father's occupation,Displaced,0.01821
+T1,34,Course,Age at enrollment,0.01767
+T1,35,Unemployment rate,Debtor,0.01718
+T1,36,Course,Admission grade,0.01685
+T1,37,Father's occupation,Approval ratio 1st sem,0.01681
+T1,38,Inflation rate,Tuition fees up to date,0.01622
+T1,39,Curricular units 1st sem (credited),Curricular units 1st sem (evaluations),0.01594
+T1,40,Previous qualification (grade),GDP,0.01568
+T1,41,Marital status,Age at enrollment,0.01539
+T1,42,Previous qualification (grade),Father's occupation,0.01539
+T1,43,Debtor,Tuition fees up to date,0.01533
+T1,44,Gender,GDP,0.01487
+T1,45,Admission grade,Tuition fees up to date,0.01447
+T1,46,Unemployment rate,Curricular units 1st sem (enrolled),0.01445
+T1,47,Unemployment rate,Approval ratio 1st sem,0.01444
+T1,48,Gender,Tuition fees up to date,0.01430
+T1,49,Unemployment rate,GDP,0.01421
+T1,50,Mother's occupation,Curricular units 1st sem (grade),0.01382
+T1,51,Admission grade,Curricular units 1st sem (grade),0.01381
+T1,52,Previous qualification (grade),Admission grade,0.01374
+T1,53,Curricular units 1st sem (enrolled),Curricular units 1st sem (approved),0.01373
+T1,54,Course,Curricular units 1st sem (approved),0.01371
+T1,55,Application mode,Unemployment rate,0.01357
+T1,56,Age at enrollment,Unemployment rate,0.01355
+T1,57,Age at enrollment,Tuition fees up to date,0.01354
+T1,58,Scholarship holder,Age at enrollment,0.01349
+T1,59,Unemployment rate,Tuition fees up to date,0.01345
+T1,60,Course,GDP,0.01311
+T1,61,Admission grade,Age at enrollment,0.01300
+T1,62,Course,Previous qualification (grade),0.01291
+T1,63,Gender,Unemployment rate,0.01250
+T1,64,Curricular units 1st sem (approved),Curricular units 1st sem (grade),0.01237
+T1,65,Previous qualification (grade),Curricular units 1st sem (grade),0.01212
+T1,66,Course,Tuition fees up to date,0.01162
+T1,67,Father's occupation,Curricular units 1st sem (credited),0.01155
+T1,68,Tuition fees up to date,Curricular units 1st sem (approved),0.01150
+T1,69,Curricular units 1st sem (credited),Curricular units 1st sem (enrolled),0.01138
+T1,70,Displaced,Debtor,0.01109
+T1,71,Gender,Age at enrollment,0.01092
+T1,72,Course,Unemployment rate,0.01091
+T1,73,Mother's qualification,Admission grade,0.01078
+T1,74,Admission grade,Gender,0.01076
+T1,75,Application mode,Previous qualification (grade),0.01075
+T1,76,Previous qualification,Displaced,0.01066
+T1,77,Displaced,Tuition fees up to date,0.01063
+T1,78,Previous qualification,Unemployment rate,0.01055
+T1,79,Application order,Course,0.01040
+T1,80,Curricular units 1st sem (evaluations),Curricular units 1st sem (grade),0.01040
+T1,81,Application mode,Gender,0.01002
+T1,82,Displaced,Unemployment rate,0.01001
+T1,83,Mother's occupation,Approval ratio 1st sem,0.00993
+T1,84,Father's qualification,Admission grade,0.00991
+T1,85,Age at enrollment,Curricular units 1st sem (grade),0.00965
+T1,86,Application mode,Father's occupation,0.00959
+T1,87,Previous qualification (grade),Age at enrollment,0.00956
+T1,88,Previous qualification (grade),Debtor,0.00937
+T1,89,GDP,Curricular units 1st sem (grade),0.00928
+T1,90,Inflation rate,Approval ratio 1st sem,0.00918
+T1,91,Previous qualification (grade),Approval ratio 1st sem,0.00913
+T1,92,Displaced,Curricular units 1st sem (enrolled),0.00912
+T1,93,Father's occupation,Age at enrollment,0.00908
+T1,94,Gender,Scholarship holder,0.00908
+T1,95,Scholarship holder,Curricular units 1st sem (credited),0.00897
+T1,96,Admission grade,Unemployment rate,0.00892
+T1,97,Father's qualification,Curricular units 1st sem (enrolled),0.00891
+T1,98,Father's occupation,Curricular units 1st sem (grade),0.00887
+T1,99,Displaced,Curricular units 1st sem (credited),0.00882
+T1,100,Scholarship holder,Curricular units 1st sem (grade),0.00875
+T1,101,Tuition fees up to date,Curricular units 1st sem (enrolled),0.00872
+T1,102,Previous qualification (grade),Father's qualification,0.00866
+T1,103,Curricular units 1st sem (credited),Approval ratio 1st sem,0.00856
+T1,104,Admission grade,Curricular units 1st sem (evaluations),0.00847
+T1,105,Mother's occupation,Admission grade,0.00834
+T1,106,Mother's qualification,Gender,0.00827
+T1,107,Application mode,Curricular units 1st sem (without evaluations),0.00822
+T1,108,Unemployment rate,Curricular units 1st sem (credited),0.00808
+T1,109,Displaced,Age at enrollment,0.00806
+T1,110,Gender,Curricular units 1st sem (grade),0.00802
+T1,111,Mother's occupation,Age at enrollment,0.00797
+T1,112,Father's qualification,Unemployment rate,0.00795
+T1,113,Application mode,Age at enrollment,0.00783
+T1,114,Admission grade,Curricular units 1st sem (enrolled),0.00774
+T1,115,GDP,Approval ratio 1st sem,0.00769
+T1,116,Previous qualification (grade),Mother's occupation,0.00766
+T1,117,Admission grade,Displaced,0.00758
+T1,118,Application mode,Curricular units 1st sem (credited),0.00740
+T1,119,Application mode,Tuition fees up to date,0.00738
+T1,120,Father's occupation,GDP,0.00716
+T1,121,Age at enrollment,Curricular units 1st sem (enrolled),0.00698
+T1,122,Course,Inflation rate,0.00698
+T1,123,Gender,Curricular units 1st sem (approved),0.00687
+T1,124,Previous qualification (grade),Gender,0.00684
+T1,125,Father's occupation,Unemployment rate,0.00674
+T1,126,Mother's occupation,Unemployment rate,0.00674
+T1,127,Father's occupation,Curricular units 1st sem (approved),0.00669
+T1,128,Mother's qualification,GDP,0.00660
+T1,129,Previous qualification (grade),Curricular units 1st sem (credited),0.00659
+T1,130,Unemployment rate,Curricular units 1st sem (approved),0.00658
+T1,131,Age at enrollment,Curricular units 1st sem (evaluations),0.00655
+T1,132,Application order,Unemployment rate,0.00655
+T1,133,Admission grade,Curricular units 1st sem (approved),0.00654
+T1,134,Father's occupation,Curricular units 1st sem (enrolled),0.00653
+T1,135,Father's qualification,Approval ratio 1st sem,0.00649
+T1,136,Course,Curricular units 1st sem (enrolled),0.00642
+T1,137,Marital status,Curricular units 1st sem (grade),0.00638
+T1,138,Displaced,Curricular units 1st sem (approved),0.00637
+T1,139,Mother's occupation,GDP,0.00635
+T1,140,Inflation rate,Curricular units 1st sem (grade),0.00614
+T1,141,Scholarship holder,Curricular units 1st sem (enrolled),0.00605
+T1,142,Debtor,Curricular units 1st sem (grade),0.00600
+T1,143,Marital status,Mother's occupation,0.00597
+T1,144,Debtor,Curricular units 1st sem (approved),0.00596
+T1,145,Previous qualification (grade),Inflation rate,0.00591
+T1,146,Course,Debtor,0.00583
+T1,147,Application order,Previous qualification (grade),0.00582
+T1,148,Admission grade,Inflation rate,0.00581
+T1,149,Tuition fees up to date,Curricular units 1st sem (evaluations),0.00580
+T1,150,Previous qualification (grade),Curricular units 1st sem (approved),0.00579
+T1,151,Application mode,Curricular units 1st sem (enrolled),0.00578
+T1,152,Course,Father's occupation,0.00575
+T1,153,Previous qualification (grade),Curricular units 1st sem (evaluations),0.00561
+T1,154,Admission grade,Curricular units 1st sem (credited),0.00557
+T1,155,Father's qualification,Gender,0.00555
+T1,156,Mother's qualification,Approval ratio 1st sem,0.00550
+T1,157,Application order,Inflation rate,0.00548
+T1,158,Displaced,Curricular units 1st sem (evaluations),0.00543
+T1,159,Curricular units 1st sem (grade),Curricular units 1st sem (without evaluations),0.00539
+T1,160,Displaced,GDP,0.00538
+T1,161,Displaced,Curricular units 1st sem (grade),0.00528
+T1,162,Father's occupation,Curricular units 1st sem (evaluations),0.00512
+T1,163,Father's qualification,Scholarship holder,0.00508
+T1,164,Previous qualification (grade),Curricular units 1st sem (enrolled),0.00507
+T1,165,Father's occupation,Gender,0.00505
+T1,166,Previous qualification,Approval ratio 1st sem,0.00505
+T1,167,Gender,Curricular units 1st sem (enrolled),0.00503
+T1,168,Application mode,Curricular units 1st sem (evaluations),0.00501
+T1,169,Application order,Admission grade,0.00500
+T1,170,Curricular units 1st sem (credited),Curricular units 1st sem (approved),0.00497
+T1,171,Father's qualification,Curricular units 1st sem (grade),0.00496
+T1,172,Course,Mother's occupation,0.00489
+T1,173,Application mode,Displaced,0.00479
+T1,174,Application mode,Application order,0.00469
+T1,175,Mother's qualification,Curricular units 1st sem (evaluations),0.00468
+T1,176,Father's qualification,Displaced,0.00457
+T1,177,Course,Mother's qualification,0.00457
+T1,178,Application mode,Approval ratio 1st sem,0.00457
+T1,179,Mother's occupation,Tuition fees up to date,0.00455
+T1,180,Application mode,Scholarship holder,0.00451
+T1,181,Marital status,Father's occupation,0.00451
+T1,182,Curricular units 1st sem (evaluations),Curricular units 1st sem (approved),0.00450
+T1,183,Mother's occupation,Displaced,0.00444
+T1,184,Unemployment rate,Curricular units 1st sem (evaluations),0.00425
+T1,185,Curricular units 1st sem (without evaluations),Approval ratio 1st sem,0.00415
+T1,186,Mother's qualification,Father's qualification,0.00415
+T1,187,Previous qualification (grade),Scholarship holder,0.00415
+T1,188,Father's qualification,Age at enrollment,0.00414
+T1,189,Application mode,Father's qualification,0.00413
+T1,190,Displaced,Inflation rate,0.00413
+T1,191,Scholarship holder,Tuition fees up to date,0.00409
+T1,192,Gender,Curricular units 1st sem (credited),0.00406
+T1,193,Marital status,Approval ratio 1st sem,0.00399
+T1,194,Application order,Approval ratio 1st sem,0.00398
+T1,195,Mother's occupation,Gender,0.00396
+T1,196,Application mode,Curricular units 1st sem (grade),0.00393
+T1,197,Previous qualification,Curricular units 1st sem (grade),0.00393
+T1,198,Curricular units 1st sem (approved),Approval ratio 1st sem,0.00386
+T1,199,Course,Father's qualification,0.00378
+T1,200,Scholarship holder,Unemployment rate,0.00370
+T1,201,Mother's qualification,Mother's occupation,0.00369
+T1,202,Father's qualification,GDP,0.00366
+T1,203,Course,Previous qualification,0.00362
+T1,204,Mother's qualification,Displaced,0.00362
+T1,205,Application mode,Course,0.00359
+T1,206,Application mode,Debtor,0.00356
+T1,207,Age at enrollment,GDP,0.00348
+T1,208,Father's occupation,Debtor,0.00344
+T1,209,Mother's qualification,Father's occupation,0.00341
+T1,210,Application order,Age at enrollment,0.00338
+T1,211,Previous qualification (grade),Mother's qualification,0.00331
+T1,212,Gender,Debtor,0.00330
+T1,213,Application mode,GDP,0.00329
+T1,214,Unemployment rate,Curricular units 1st sem (without evaluations),0.00328
+T1,215,Application order,Curricular units 1st sem (grade),0.00327
+T1,216,Application order,GDP,0.00326
+T1,217,Father's qualification,Tuition fees up to date,0.00326
+T1,218,Curricular units 1st sem (credited),Curricular units 1st sem (grade),0.00324
+T1,219,Application mode,Curricular units 1st sem (approved),0.00323
+T1,220,Mother's qualification,Inflation rate,0.00323
+T1,221,GDP,Curricular units 1st sem (evaluations),0.00323
+T1,222,Course,Curricular units 1st sem (credited),0.00317
+T1,223,Mother's qualification,Curricular units 1st sem (enrolled),0.00316
+T1,224,Mother's qualification,Unemployment rate,0.00311
+T1,225,Application mode,Inflation rate,0.00301
+T1,226,Application mode,Mother's qualification,0.00299
+T1,227,Mother's qualification,Curricular units 1st sem (grade),0.00299
+T1,228,Previous qualification,Gender,0.00296
+T1,229,Mother's qualification,Age at enrollment,0.00295
+T1,230,Inflation rate,Curricular units 1st sem (credited),0.00293
+T1,231,Father's qualification,Curricular units 1st sem (evaluations),0.00291
+T1,232,Father's qualification,Curricular units 1st sem (approved),0.00289
+T1,233,GDP,Curricular units 1st sem (enrolled),0.00287
+T1,234,Age at enrollment,Debtor,0.00287
+T1,235,Application order,Curricular units 1st sem (enrolled),0.00286
+T1,236,Displaced,Scholarship holder,0.00286
+T1,237,Father's qualification,Mother's occupation,0.00284
+T1,238,Application mode,Mother's occupation,0.00275
+T1,239,Father's qualification,Inflation rate,0.00275
+T1,240,Age at enrollment,Curricular units 1st sem (credited),0.00269
+T1,241,Application order,Debtor,0.00265
+T1,242,Mother's qualification,Tuition fees up to date,0.00265
+T1,243,Father's occupation,Tuition fees up to date,0.00258
+T1,244,Previous qualification,Previous qualification (grade),0.00254
+T1,245,Mother's occupation,Inflation rate,0.00252
+T1,246,Daytime/evening attendance,Age at enrollment,0.00246
+T1,247,Application order,Tuition fees up to date,0.00244
+T1,248,Father's qualification,Curricular units 1st sem (credited),0.00241
+T1,249,Course,Curricular units 1st sem (without evaluations),0.00240
+T1,250,Mother's occupation,Curricular units 1st sem (evaluations),0.00240
+T1,251,Father's occupation,Scholarship holder,0.00236
+T1,252,Previous qualification,Curricular units 1st sem (credited),0.00234
+T1,253,Debtor,Curricular units 1st sem (evaluations),0.00229
+T1,254,Mother's occupation,Curricular units 1st sem (enrolled),0.00228
+T1,255,Debtor,Curricular units 1st sem (credited),0.00225
+T1,256,Mother's occupation,Debtor,0.00225
+T1,257,Mother's qualification,Curricular units 1st sem (approved),0.00225
+T1,258,Marital status,Displaced,0.00223
+T1,259,Age at enrollment,Curricular units 1st sem (without evaluations),0.00223
+T1,260,Inflation rate,Debtor,0.00221
+T1,261,Previous qualification,Age at enrollment,0.00220
+T1,262,Gender,Inflation rate,0.00216
+T1,263,Application order,Curricular units 1st sem (evaluations),0.00213
+T1,264,Previous qualification,Father's occupation,0.00212
+T1,265,Admission grade,Debtor,0.00206
+T1,266,Previous qualification,Curricular units 1st sem (enrolled),0.00205
+T1,267,Application order,Mother's qualification,0.00202
+T1,268,Age at enrollment,Inflation rate,0.00202
+T1,269,Scholarship holder,Curricular units 1st sem (evaluations),0.00199
+T1,270,GDP,Curricular units 1st sem (approved),0.00195
+T1,271,Mother's occupation,Curricular units 1st sem (credited),0.00195
+T1,272,Inflation rate,Curricular units 1st sem (approved),0.00194
+T1,273,Inflation rate,Curricular units 1st sem (evaluations),0.00194
+T1,274,Father's qualification,Debtor,0.00191
+T1,275,Mother's qualification,Scholarship holder,0.00185
+T1,276,Previous qualification (grade),Curricular units 1st sem (without evaluations),0.00178
+T1,277,Marital status,Father's qualification,0.00178
+T1,278,Mother's occupation,Curricular units 1st sem (approved),0.00175
+T1,279,Daytime/evening attendance,Mother's occupation,0.00175
+T1,280,Scholarship holder,Curricular units 1st sem (approved),0.00175
+T1,281,Application order,Displaced,0.00173
+T1,282,Inflation rate,Curricular units 1st sem (enrolled),0.00172
+T1,283,Inflation rate,GDP,0.00171
+T1,284,Nacionality,Age at enrollment,0.00169
+T1,285,Application order,Father's occupation,0.00163
+T1,286,Nacionality,Admission grade,0.00162
+T1,287,Displaced,Gender,0.00159
+T1,288,Mother's qualification,Curricular units 1st sem (credited),0.00153
+T1,289,Curricular units 1st sem (enrolled),Curricular units 1st sem (without evaluations),0.00152
+T1,290,Daytime/evening attendance,Curricular units 1st sem (approved),0.00152
+T1,291,Admission grade,Scholarship holder,0.00152
+T1,292,Mother's occupation,Scholarship holder,0.00151
+T1,293,Marital status,Admission grade,0.00150
+T1,294,Application mode,Previous qualification,0.00149
+T1,295,Nacionality,Father's occupation,0.00139
+T1,296,Tuition fees up to date,Curricular units 1st sem (credited),0.00137
+T1,297,Unemployment rate,Inflation rate,0.00136
+T1,298,Marital status,Curricular units 1st sem (enrolled),0.00135
+T1,299,Scholarship holder,GDP,0.00134
+T1,300,Application order,Curricular units 1st sem (credited),0.00133
+T1,301,Previous qualification,Mother's qualification,0.00130
+T1,302,Application order,Mother's occupation,0.00128
+T1,303,Curricular units 1st sem (approved),Curricular units 1st sem (without evaluations),0.00126
+T1,304,Scholarship holder,Inflation rate,0.00121
+T1,305,Course,Scholarship holder,0.00114
+T1,306,Marital status,Previous qualification,0.00114
+T1,307,Application order,Scholarship holder,0.00112
+T1,308,Nacionality,Tuition fees up to date,0.00111
+T1,309,Nacionality,Curricular units 1st sem (evaluations),0.00109
+T1,310,Scholarship holder,Debtor,0.00107
+T1,311,Previous qualification,Mother's occupation,0.00101
+T1,312,Previous qualification,Inflation rate,0.00101
+T1,313,Application order,Father's qualification,0.00101
+T1,314,Marital status,Curricular units 1st sem (approved),0.00101
+T1,315,Admission grade,Curricular units 1st sem (without evaluations),0.00098
+T1,316,Nacionality,Mother's occupation,0.00092
+T1,317,Debtor,Curricular units 1st sem (enrolled),0.00091
+T1,318,Application order,Curricular units 1st sem (approved),0.00090
+T1,319,Displaced,Curricular units 1st sem (without evaluations),0.00090
+T1,320,Mother's qualification,Debtor,0.00090
+T1,321,Daytime/evening attendance,Displaced,0.00088
+T1,322,GDP,Curricular units 1st sem (credited),0.00086
+T1,323,Previous qualification,Curricular units 1st sem (approved),0.00085
+T1,324,Previous qualification,Admission grade,0.00083
+T1,325,Marital status,Course,0.00081
+T1,326,Application order,Gender,0.00076
+T1,327,International,Curricular units 1st sem (grade),0.00076
+T1,328,Gender,Curricular units 1st sem (without evaluations),0.00072
+T1,329,Marital status,Previous qualification (grade),0.00072
+T1,330,Previous qualification,Curricular units 1st sem (evaluations),0.00071
+T1,331,Nacionality,Unemployment rate,0.00071
+T1,332,Tuition fees up to date,Curricular units 1st sem (without evaluations),0.00070
+T1,333,Admission grade,International,0.00068
+T1,334,Previous qualification,GDP,0.00067
+T1,335,Marital status,Gender,0.00065
+T1,336,Daytime/evening attendance,Father's occupation,0.00063
+T1,337,Previous qualification,Father's qualification,0.00062
+T1,338,Marital status,GDP,0.00060
+T1,339,Marital status,Unemployment rate,0.00057
+T1,340,Course,Daytime/evening attendance,0.00056
+T1,341,Marital status,Curricular units 1st sem (credited),0.00056
+T1,342,Marital status,Application mode,0.00056
+T1,343,Debtor,Curricular units 1st sem (without evaluations),0.00053
+T1,344,Marital status,Inflation rate,0.00051
+T1,345,Course,International,0.00051
+T1,346,Nacionality,GDP,0.00049
+T1,347,Nacionality,Curricular units 1st sem (grade),0.00042
+T1,348,Daytime/evening attendance,Curricular units 1st sem (credited),0.00040
+T1,349,Inflation rate,Curricular units 1st sem (without evaluations),0.00040
+T1,350,Age at enrollment,International,0.00036
+T1,351,GDP,Curricular units 1st sem (without evaluations),0.00034
+T1,352,Daytime/evening attendance,Approval ratio 1st sem,0.00033
+T1,353,Application mode,Nacionality,0.00031
+T1,354,Daytime/evening attendance,Unemployment rate,0.00029
+T1,355,Previous qualification,Tuition fees up to date,0.00026
+T1,356,Daytime/evening attendance,Previous qualification (grade),0.00026
+T1,357,Nacionality,Curricular units 1st sem (credited),0.00025
+T1,358,Father's occupation,Curricular units 1st sem (without evaluations),0.00024
+T1,359,Application order,Previous qualification,0.00023
+T1,360,Nacionality,Mother's qualification,0.00022
+T1,361,Previous qualification (grade),Educational special needs,0.00020
+T1,362,International,Approval ratio 1st sem,0.00020
+T1,363,Daytime/evening attendance,Curricular units 1st sem (enrolled),0.00018
+T1,364,Nacionality,Inflation rate,0.00018
+T1,365,Marital status,Curricular units 1st sem (evaluations),0.00016
+T1,366,Curricular units 1st sem (evaluations),Curricular units 1st sem (without evaluations),0.00016
+T1,367,Previous qualification,Curricular units 1st sem (without evaluations),0.00015
+T1,368,Mother's qualification,Curricular units 1st sem (without evaluations),0.00015
+T1,369,Course,Nacionality,0.00015
+T1,370,Mother's occupation,Curricular units 1st sem (without evaluations),0.00014
+T1,371,Marital status,Curricular units 1st sem (without evaluations),0.00014
+T1,372,Curricular units 1st sem (credited),Curricular units 1st sem (without evaluations),0.00013
+T1,373,Nacionality,Curricular units 1st sem (enrolled),0.00012
+T1,374,Nacionality,Approval ratio 1st sem,0.00012
+T1,375,Marital status,Mother's qualification,0.00012
+T1,376,Daytime/evening attendance,Mother's qualification,0.00011
+T1,377,Nacionality,Curricular units 1st sem (approved),0.00009
+T1,378,Marital status,Tuition fees up to date,0.00008
+T1,379,International,Curricular units 1st sem (evaluations),0.00006
+T1,380,Daytime/evening attendance,Tuition fees up to date,0.00006
+T1,381,Mother's qualification,International,0.00005
+T1,382,Application order,Nacionality,0.00005
+T1,383,Nacionality,Father's qualification,0.00005
+T1,384,Mother's occupation,International,0.00004
+T1,385,Nacionality,Scholarship holder,0.00004
+T1,386,Previous qualification (grade),International,0.00004
+T1,387,Marital status,Nacionality,0.00004
+T1,388,Previous qualification (grade),Nacionality,0.00004
+T1,389,Daytime/evening attendance,Admission grade,0.00004
+T1,390,Father's qualification,Curricular units 1st sem (without evaluations),0.00004
+T1,391,Application order,Curricular units 1st sem (without evaluations),0.00003
+T1,392,Daytime/evening attendance,Nacionality,0.00003
+T1,393,Educational special needs,Age at enrollment,0.00003
+T1,394,Father's occupation,International,0.00003
+T1,395,Father's occupation,Educational special needs,0.00002
+T1,396,Mother's occupation,Educational special needs,0.00002
+T1,397,International,Curricular units 1st sem (approved),0.00002
+T1,398,Nacionality,Curricular units 1st sem (without evaluations),0.00001
+T1,399,Marital status,Application order,0.00001
+T1,400,Scholarship holder,Curricular units 1st sem (without evaluations),0.00000
+T1,401,Gender,International,0.00000
+T1,402,Nacionality,Gender,0.00000
+T1,403,Nacionality,Educational special needs,0.00000
+T1,404,Nacionality,International,0.00000
+T1,405,Nacionality,Displaced,0.00000
+T1,406,Nacionality,Debtor,0.00000
+T1,407,Father's qualification,Educational special needs,0.00000
+T1,408,Mother's qualification,Educational special needs,0.00000
+T1,409,Scholarship holder,International,0.00000
+T1,410,Father's qualification,International,0.00000
+T1,411,Admission grade,Educational special needs,0.00000
+T1,412,Educational special needs,Curricular units 1st sem (approved),0.00000
+T1,413,Marital status,Daytime/evening attendance,0.00000
+T1,414,Marital status,Scholarship holder,0.00000
+T1,415,Educational special needs,Gender,0.00000
+T1,416,Educational special needs,Scholarship holder,0.00000
+T1,417,Marital status,Educational special needs,0.00000
+T1,418,Educational special needs,International,0.00000
+T1,419,Educational special needs,Unemployment rate,0.00000
+T1,420,Educational special needs,GDP,0.00000
+T1,421,Educational special needs,Inflation rate,0.00000
+T1,422,Displaced,Educational special needs,0.00000
+T1,423,Displaced,International,0.00000
+T1,424,Educational special needs,Tuition fees up to date,0.00000
+T1,425,Educational special needs,Debtor,0.00000
+T1,426,Educational special needs,Curricular units 1st sem (credited),0.00000
+T1,427,Educational special needs,Curricular units 1st sem (enrolled),0.00000
+T1,428,Educational special needs,Approval ratio 1st sem,0.00000
+T1,429,Educational special needs,Curricular units 1st sem (evaluations),0.00000
+T1,430,Educational special needs,Curricular units 1st sem (grade),0.00000
+T1,431,Educational special needs,Curricular units 1st sem (without evaluations),0.00000
+T1,432,International,Tuition fees up to date,0.00000
+T1,433,International,Debtor,0.00000
+T1,434,Daytime/evening attendance,Previous qualification,0.00000
+T1,435,Previous qualification,Nacionality,0.00000
+T1,436,Daytime/evening attendance,Curricular units 1st sem (grade),0.00000
+T1,437,Daytime/evening attendance,Curricular units 1st sem (without evaluations),0.00000
+T1,438,Daytime/evening attendance,Curricular units 1st sem (evaluations),0.00000
+T1,439,Previous qualification,Debtor,0.00000
+T1,440,Daytime/evening attendance,Debtor,0.00000
+T1,441,Daytime/evening attendance,GDP,0.00000
+T1,442,Previous qualification,International,0.00000
+T1,443,Daytime/evening attendance,Inflation rate,0.00000
+T1,444,International,GDP,0.00000
+T1,445,International,Curricular units 1st sem (enrolled),0.00000
+T1,446,International,Curricular units 1st sem (credited),0.00000
+T1,447,International,Curricular units 1st sem (without evaluations),0.00000
+T1,448,Previous qualification,Educational special needs,0.00000
+T1,449,Previous qualification,Scholarship holder,0.00000
+T1,450,International,Unemployment rate,0.00000
+T1,451,International,Inflation rate,0.00000
+T1,452,Daytime/evening attendance,Scholarship holder,0.00000
+T1,453,Course,Educational special needs,0.00000
+T1,454,Daytime/evening attendance,Educational special needs,0.00000
+T1,455,Daytime/evening attendance,Gender,0.00000
+T1,456,Daytime/evening attendance,International,0.00000
+T1,457,Daytime/evening attendance,Father's qualification,0.00000
+T1,458,Application order,Educational special needs,0.00000
+T1,459,Marital status,International,0.00000
+T1,460,Application mode,Educational special needs,0.00000
+T1,461,Application order,International,0.00000
+T1,462,Application order,Daytime/evening attendance,0.00000
+T1,463,Application mode,International,0.00000
+T1,464,Marital status,Debtor,0.00000
+T1,465,Application mode,Daytime/evening attendance,0.00000
+T2,1,GDP,Tuition fees up to date,0.06677
+T2,2,Age at enrollment,Approval ratio 2nd sem,0.06561
+T2,3,Tuition fees up to date,Approval ratio 2nd sem,0.05150
+T2,4,Approval ratio 1st sem,Approval ratio 2nd sem,0.04254
+T2,5,Age at enrollment,Approval ratio 1st sem,0.03689
+T2,6,Course,Approval ratio 1st sem,0.03469
+T2,7,Curricular units 2nd sem (grade),Approval ratio 1st sem,0.03420
+T2,8,Course,Curricular units 2nd sem (grade),0.03406
+T2,9,Tuition fees up to date,Approval ratio 1st sem,0.03378
+T2,10,Displaced,Approval ratio 1st sem,0.03098
+T2,11,Father's qualification,Father's occupation,0.03050
+T2,12,Scholarship holder,Approval ratio 1st sem,0.02868
+T2,13,Curricular units 2nd sem (approved),Approval ratio 1st sem,0.02849
+T2,14,Father's occupation,Approval ratio 2nd sem,0.02843
+T2,15,Application mode,Admission grade,0.02833
+T2,16,GDP,Debtor,0.02811
+T2,17,Father's occupation,Admission grade,0.02605
+T2,18,Curricular units 2nd sem (grade),Approval ratio 2nd sem,0.02566
+T2,19,Admission grade,Approval ratio 1st sem,0.02495
+T2,20,Course,Approval ratio 2nd sem,0.02489
+T2,21,Displaced,Approval ratio 2nd sem,0.02401
+T2,22,Admission grade,Grade change,0.02390
+T2,23,Previous qualification (grade),Admission grade,0.02342
+T2,24,Previous qualification (grade),Tuition fees up to date,0.02339
+T2,25,Tuition fees up to date,Curricular units 2nd sem (approved),0.02277
+T2,26,Gender,Approval ratio 1st sem,0.02254
+T2,27,Admission grade,Approval ratio 2nd sem,0.02234
+T2,28,Curricular units 1st sem (enrolled),Approval ratio 2nd sem,0.02212
+T2,29,Application mode,Approval ratio 2nd sem,0.02205
+T2,30,Father's occupation,Grade change,0.02096
+T2,31,Previous qualification (grade),Displaced,0.02071
+T2,32,Previous qualification (grade),GDP,0.02058
+T2,33,Admission grade,Age at enrollment,0.02027
+T2,34,Gender,Approval ratio 2nd sem,0.02007
+T2,35,Father's occupation,Inflation rate,0.01971
+T2,36,Previous qualification (grade),Unemployment rate,0.01930
+T2,37,Course,Curricular units 1st sem (grade),0.01874
+T2,38,Debtor,Approval ratio 1st sem,0.01814
+T2,39,Debtor,Approval ratio 2nd sem,0.01805
+T2,40,Curricular units 1st sem (grade),Grade change,0.01707
+T2,41,Admission grade,Tuition fees up to date,0.01683
+T2,42,Course,Curricular units 2nd sem (evaluations),0.01679
+T2,43,Unemployment rate,Curricular units 2nd sem (approved),0.01635
+T2,44,Debtor,Tuition fees up to date,0.01576
+T2,45,Age at enrollment,Tuition fees up to date,0.01561
+T2,46,Application order,Previous qualification (grade),0.01550
+T2,47,Mother's occupation,Approval ratio 2nd sem,0.01549
+T2,48,Application order,Admission grade,0.01519
+T2,49,Displaced,Debtor,0.01515
+T2,50,Application mode,Tuition fees up to date,0.01514
+T2,51,Course,Age at enrollment,0.01507
+T2,52,Tuition fees up to date,Curricular units 2nd sem (grade),0.01502
+T2,53,Previous qualification (grade),Grade change,0.01499
+T2,54,Father's occupation,Displaced,0.01449
+T2,55,Course,Tuition fees up to date,0.01435
+T2,56,Course,Unemployment rate,0.01435
+T2,57,Admission grade,GDP,0.01430
+T2,58,Curricular units 1st sem (grade),Approval ratio 1st sem,0.01376
+T2,59,Scholarship holder,Age at enrollment,0.01374
+T2,60,Unemployment rate,Approval ratio 1st sem,0.01371
+T2,61,Course,Displaced,0.01358
+T2,62,Course,Gender,0.01351
+T2,63,Gender,Unemployment rate,0.01338
+T2,64,Previous qualification (grade),Approval ratio 2nd sem,0.01320
+T2,65,Age at enrollment,Curricular units 2nd sem (approved),0.01320
+T2,66,Tuition fees up to date,Curricular units 1st sem (grade),0.01308
+T2,67,Marital status,Mother's occupation,0.01282
+T2,68,Course,Curricular units 2nd sem (approved),0.01226
+T2,69,GDP,Approval ratio 2nd sem,0.01219
+T2,70,Previous qualification (grade),Curricular units 2nd sem (evaluations),0.01213
+T2,71,Unemployment rate,Curricular units 2nd sem (grade),0.01211
+T2,72,Previous qualification (grade),Father's occupation,0.01209
+T2,73,Curricular units 1st sem (approved),Curricular units 1st sem (grade),0.01188
+T2,74,Mother's occupation,Father's occupation,0.01177
+T2,75,Course,Grade change,0.01153
+T2,76,Unemployment rate,Debtor,0.01140
+T2,77,Gender,Grade change,0.01136
+T2,78,Unemployment rate,Grade change,0.01135
+T2,79,Curricular units 2nd sem (enrolled),Approval ratio 2nd sem,0.01133
+T2,80,Curricular units 1st sem (enrolled),Curricular units 2nd sem (approved),0.01128
+T2,81,Unemployment rate,Approval ratio 2nd sem,0.01121
+T2,82,Age at enrollment,Curricular units 1st sem (grade),0.01116
+T2,83,Mother's occupation,Admission grade,0.01107
+T2,84,Gender,Curricular units 1st sem (evaluations),0.01102
+T2,85,Displaced,Tuition fees up to date,0.01093
+T2,86,Curricular units 2nd sem (enrolled),Curricular units 2nd sem (approved),0.01091
+T2,87,Displaced,GDP,0.01090
+T2,88,Curricular units 1st sem (evaluations),Grade change,0.01084
+T2,89,Father's qualification,Grade change,0.01060
+T2,90,Curricular units 2nd sem (evaluations),Curricular units 2nd sem (approved),0.01041
+T2,91,Admission grade,Curricular units 2nd sem (approved),0.01034
+T2,92,Admission grade,Curricular units 2nd sem (grade),0.01030
+T2,93,Gender,GDP,0.01023
+T2,94,Mother's occupation,Curricular units 1st sem (grade),0.01000
+T2,95,Gender,Tuition fees up to date,0.00992
+T2,96,Curricular units 1st sem (grade),Curricular units 2nd sem (enrolled),0.00991
+T2,97,Curricular units 2nd sem (approved),Curricular units 2nd sem (grade),0.00980
+T2,98,Course,Previous qualification (grade),0.00978
+T2,99,Age at enrollment,GDP,0.00977
+T2,100,Father's qualification,Admission grade,0.00968
+T2,101,Gender,Curricular units 2nd sem (approved),0.00963
+T2,102,Application mode,Approval ratio 1st sem,0.00961
+T2,103,Admission grade,Curricular units 1st sem (grade),0.00957
+T2,104,Age at enrollment,Curricular units 2nd sem (grade),0.00951
+T2,105,Application mode,Unemployment rate,0.00950
+T2,106,Gender,Curricular units 2nd sem (grade),0.00950
+T2,107,Inflation rate,Tuition fees up to date,0.00949
+T2,108,Previous qualification (grade),Age at enrollment,0.00932
+T2,109,Curricular units 1st sem (credited),Curricular units 2nd sem (evaluations),0.00913
+T2,110,GDP,Curricular units 2nd sem (evaluations),0.00878
+T2,111,Displaced,Unemployment rate,0.00877
+T2,112,Admission grade,Curricular units 2nd sem (evaluations),0.00875
+T2,113,Previous qualification (grade),Father's qualification,0.00855
+T2,114,Admission grade,Unemployment rate,0.00836
+T2,115,Course,Admission grade,0.00828
+T2,116,Application mode,Previous qualification (grade),0.00826
+T2,117,Father's occupation,Approval ratio 1st sem,0.00826
+T2,118,Previous qualification (grade),Approval ratio 1st sem,0.00812
+T2,119,Father's occupation,Age at enrollment,0.00801
+T2,120,Father's qualification,Scholarship holder,0.00800
+T2,121,Approval ratio 2nd sem,Grade change,0.00787
+T2,122,Application order,Age at enrollment,0.00782
+T2,123,Application order,Unemployment rate,0.00763
+T2,124,Father's occupation,Curricular units 2nd sem (grade),0.00760
+T2,125,Unemployment rate,Curricular units 2nd sem (evaluations),0.00760
+T2,126,Curricular units 1st sem (credited),Curricular units 1st sem (evaluations),0.00743
+T2,127,Unemployment rate,Curricular units 1st sem (grade),0.00735
+T2,128,Age at enrollment,Grade change,0.00733
+T2,129,Mother's occupation,Age at enrollment,0.00707
+T2,130,Father's qualification,Approval ratio 2nd sem,0.00707
+T2,131,Age at enrollment,Curricular units 2nd sem (evaluations),0.00707
+T2,132,Father's occupation,Unemployment rate,0.00698
+T2,133,Application mode,Curricular units 1st sem (without evaluations),0.00697
+T2,134,Previous qualification,Displaced,0.00697
+T2,135,Debtor,Curricular units 2nd sem (approved),0.00645
+T2,136,Displaced,Grade change,0.00640
+T2,137,Unemployment rate,Tuition fees up to date,0.00634
+T2,138,Unemployment rate,Curricular units 1st sem (credited),0.00628
+T2,139,Curricular units 1st sem (grade),Curricular units 2nd sem (grade),0.00619
+T2,140,Application mode,Father's occupation,0.00618
+T2,141,Curricular units 1st sem (credited),Curricular units 1st sem (enrolled),0.00618
+T2,142,Mother's occupation,Approval ratio 1st sem,0.00618
+T2,143,Father's occupation,Curricular units 1st sem (grade),0.00617
+T2,144,Previous qualification (grade),Curricular units 2nd sem (grade),0.00613
+T2,145,Inflation rate,Grade change,0.00608
+T2,146,Father's qualification,Approval ratio 1st sem,0.00601
+T2,147,Inflation rate,Approval ratio 2nd sem,0.00600
+T2,148,Mother's occupation,Unemployment rate,0.00596
+T2,149,Application mode,Curricular units 2nd sem (approved),0.00594
+T2,150,Admission grade,Displaced,0.00591
+T2,151,Age at enrollment,Unemployment rate,0.00589
+T2,152,Course,Father's occupation,0.00586
+T2,153,Previous qualification,Approval ratio 1st sem,0.00585
+T2,154,Course,Curricular units 1st sem (evaluations),0.00575
+T2,155,Admission grade,Inflation rate,0.00567
+T2,156,Mother's occupation,Curricular units 2nd sem (grade),0.00566
+T2,157,Father's qualification,Unemployment rate,0.00562
+T2,158,Approval ratio 1st sem,Grade change,0.00560
+T2,159,Curricular units 1st sem (evaluations),Curricular units 2nd sem (enrolled),0.00559
+T2,160,Application order,GDP,0.00556
+T2,161,Mother's qualification,Father's occupation,0.00549
+T2,162,Mother's qualification,Approval ratio 1st sem,0.00547
+T2,163,Application order,Grade change,0.00544
+T2,164,Tuition fees up to date,Curricular units 1st sem (enrolled),0.00542
+T2,165,Curricular units 2nd sem (credited),Approval ratio 2nd sem,0.00541
+T2,166,Gender,Curricular units 2nd sem (enrolled),0.00537
+T2,167,Previous qualification (grade),Curricular units 1st sem (grade),0.00516
+T2,168,Admission grade,Curricular units 1st sem (evaluations),0.00515
+T2,169,Mother's qualification,Approval ratio 2nd sem,0.00514
+T2,170,Father's occupation,Curricular units 1st sem (evaluations),0.00511
+T2,171,Curricular units 2nd sem (grade),Grade change,0.00509
+T2,172,GDP,Curricular units 1st sem (grade),0.00506
+T2,173,Application mode,Curricular units 2nd sem (evaluations),0.00505
+T2,174,Unemployment rate,Curricular units 1st sem (evaluations),0.00504
+T2,175,Application order,Approval ratio 1st sem,0.00504
+T2,176,Curricular units 1st sem (enrolled),Curricular units 2nd sem (grade),0.00499
+T2,177,Unemployment rate,Curricular units 2nd sem (enrolled),0.00493
+T2,178,Inflation rate,Approval ratio 1st sem,0.00490
+T2,179,Application mode,Curricular units 2nd sem (grade),0.00489
+T2,180,Curricular units 2nd sem (enrolled),Curricular units 2nd sem (grade),0.00481
+T2,181,Application mode,Gender,0.00479
+T2,182,Curricular units 1st sem (grade),Approval ratio 2nd sem,0.00479
+T2,183,Gender,Curricular units 1st sem (grade),0.00476
+T2,184,Scholarship holder,Curricular units 1st sem (evaluations),0.00474
+T2,185,GDP,Approval ratio 1st sem,0.00470
+T2,186,Course,Curricular units 1st sem (approved),0.00469
+T2,187,Father's occupation,GDP,0.00469
+T2,188,Curricular units 1st sem (evaluations),Curricular units 1st sem (grade),0.00467
+T2,189,Marital status,Age at enrollment,0.00461
+T2,190,Displaced,Curricular units 2nd sem (grade),0.00459
+T2,191,Curricular units 1st sem (evaluations),Curricular units 2nd sem (grade),0.00458
+T2,192,Father's qualification,Curricular units 2nd sem (approved),0.00454
+T2,193,Curricular units 1st sem (evaluations),Approval ratio 1st sem,0.00454
+T2,194,Previous qualification (grade),Inflation rate,0.00453
+T2,195,Curricular units 1st sem (approved),Grade change,0.00450
+T2,196,Curricular units 2nd sem (enrolled),Approval ratio 1st sem,0.00446
+T2,197,Course,Mother's occupation,0.00446
+T2,198,Mother's qualification,Admission grade,0.00442
+T2,199,Application mode,Displaced,0.00440
+T2,200,Inflation rate,Curricular units 2nd sem (grade),0.00439
+T2,201,Tuition fees up to date,Curricular units 2nd sem (enrolled),0.00439
+T2,202,Displaced,Scholarship holder,0.00437
+T2,203,Curricular units 2nd sem (credited),Curricular units 2nd sem (approved),0.00429
+T2,204,Course,GDP,0.00426
+T2,205,Course,Mother's qualification,0.00424
+T2,206,Mother's qualification,Curricular units 2nd sem (approved),0.00423
+T2,207,Father's occupation,Gender,0.00422
+T2,208,Curricular units 1st sem (approved),Curricular units 2nd sem (evaluations),0.00421
+T2,209,Father's qualification,GDP,0.00421
+T2,210,Previous qualification (grade),Curricular units 1st sem (evaluations),0.00419
+T2,211,Application order,Father's qualification,0.00417
+T2,212,Scholarship holder,Curricular units 1st sem (grade),0.00417
+T2,213,Curricular units 2nd sem (evaluations),Approval ratio 2nd sem,0.00416
+T2,214,Father's occupation,Scholarship holder,0.00415
+T2,215,Age at enrollment,Curricular units 1st sem (evaluations),0.00413
+T2,216,Curricular units 1st sem (without evaluations),Approval ratio 2nd sem,0.00413
+T2,217,Unemployment rate,Curricular units 1st sem (enrolled),0.00410
+T2,218,Tuition fees up to date,Curricular units 1st sem (approved),0.00409
+T2,219,Displaced,Age at enrollment,0.00401
+T2,220,Application order,Course,0.00401
+T2,221,Course,Curricular units 2nd sem (credited),0.00399
+T2,222,Father's occupation,Curricular units 1st sem (credited),0.00398
+T2,223,Scholarship holder,Curricular units 1st sem (enrolled),0.00396
+T2,224,Inflation rate,Curricular units 1st sem (grade),0.00387
+T2,225,Admission grade,Curricular units 1st sem (approved),0.00386
+T2,226,Course,Inflation rate,0.00385
+T2,227,Application order,Curricular units 2nd sem (grade),0.00385
+T2,228,Age at enrollment,Curricular units 2nd sem (enrolled),0.00384
+T2,229,Father's occupation,Curricular units 2nd sem (credited),0.00384
+T2,230,Curricular units 2nd sem (approved),Approval ratio 2nd sem,0.00382
+T2,231,Father's qualification,Curricular units 2nd sem (grade),0.00381
+T2,232,GDP,Curricular units 2nd sem (grade),0.00379
+T2,233,Unemployment rate,Curricular units 2nd sem (credited),0.00375
+T2,234,Displaced,Curricular units 2nd sem (enrolled),0.00375
+T2,235,Application mode,Course,0.00375
+T2,236,Application order,Approval ratio 2nd sem,0.00368
+T2,237,Inflation rate,Curricular units 2nd sem (evaluations),0.00367
+T2,238,Course,Debtor,0.00365
+T2,239,Course,Curricular units 2nd sem (enrolled),0.00362
+T2,240,Age at enrollment,Inflation rate,0.00361
+T2,241,Mother's occupation,Curricular units 2nd sem (approved),0.00361
+T2,242,Father's qualification,Curricular units 1st sem (grade),0.00359
+T2,243,Curricular units 1st sem (enrolled),Curricular units 2nd sem (evaluations),0.00351
+T2,244,Tuition fees up to date,Grade change,0.00350
+T2,245,Curricular units 1st sem (grade),Curricular units 2nd sem (evaluations),0.00349
+T2,246,Course,Curricular units 2nd sem (without evaluations),0.00343
+T2,247,Unemployment rate,Curricular units 1st sem (without evaluations),0.00342
+T2,248,Previous qualification (grade),Mother's occupation,0.00342
+T2,249,Father's qualification,Gender,0.00341
+T2,250,Application order,Inflation rate,0.00338
+T2,251,GDP,Grade change,0.00330
+T2,252,Curricular units 1st sem (credited),Approval ratio 1st sem,0.00329
+T2,253,Admission grade,Curricular units 1st sem (enrolled),0.00328
+T2,254,Debtor,Curricular units 2nd sem (grade),0.00327
+T2,255,Curricular units 2nd sem (approved),Grade change,0.00327
+T2,256,Father's qualification,Inflation rate,0.00327
+T2,257,Curricular units 2nd sem (evaluations),Curricular units 2nd sem (grade),0.00326
+T2,258,Previous qualification (grade),Gender,0.00324
+T2,259,Application mode,Grade change,0.00323
+T2,260,Curricular units 1st sem (grade),Curricular units 1st sem (without evaluations),0.00322
+T2,261,Mother's qualification,Grade change,0.00321
+T2,262,Displaced,Curricular units 2nd sem (evaluations),0.00321
+T2,263,Previous qualification,Unemployment rate,0.00319
+T2,264,Curricular units 1st sem (evaluations),Curricular units 2nd sem (evaluations),0.00318
+T2,265,Application mode,Age at enrollment,0.00317
+T2,266,Mother's occupation,Displaced,0.00317
+T2,267,Scholarship holder,Approval ratio 2nd sem,0.00312
+T2,268,Curricular units 2nd sem (evaluations),Grade change,0.00312
+T2,269,Previous qualification (grade),Curricular units 2nd sem (approved),0.00308
+T2,270,Curricular units 1st sem (enrolled),Curricular units 2nd sem (credited),0.00305
+T2,271,Mother's occupation,Tuition fees up to date,0.00302
+T2,272,Application order,Curricular units 1st sem (grade),0.00301
+T2,273,Previous qualification,Gender,0.00300
+T2,274,Father's occupation,Curricular units 2nd sem (approved),0.00299
+T2,275,Mother's occupation,GDP,0.00297
+T2,276,Father's occupation,Curricular units 2nd sem (evaluations),0.00297
+T2,277,Mother's qualification,Mother's occupation,0.00296
+T2,278,Scholarship holder,Unemployment rate,0.00294
+T2,279,Previous qualification (grade),Debtor,0.00291
+T2,280,Scholarship holder,Grade change,0.00291
+T2,281,Mother's occupation,Curricular units 2nd sem (evaluations),0.00288
+T2,282,Curricular units 1st sem (grade),Curricular units 2nd sem (approved),0.00288
+T2,283,Curricular units 1st sem (credited),Curricular units 1st sem (approved),0.00286
+T2,284,Age at enrollment,Curricular units 1st sem (enrolled),0.00284
+T2,285,Father's qualification,Curricular units 1st sem (enrolled),0.00283
+T2,286,Gender,Curricular units 1st sem (approved),0.00281
+T2,287,Father's qualification,Mother's occupation,0.00278
+T2,288,Mother's qualification,Unemployment rate,0.00276
+T2,289,Displaced,Curricular units 2nd sem (credited),0.00275
+T2,290,Displaced,Curricular units 2nd sem (approved),0.00275
+T2,291,Curricular units 1st sem (enrolled),Approval ratio 1st sem,0.00274
+T2,292,Admission grade,Scholarship holder,0.00272
+T2,293,Age at enrollment,Curricular units 1st sem (approved),0.00271
+T2,294,Marital status,GDP,0.00271
+T2,295,Previous qualification (grade),Curricular units 1st sem (enrolled),0.00270
+T2,296,Debtor,Curricular units 1st sem (approved),0.00270
+T2,297,Curricular units 1st sem (evaluations),Curricular units 2nd sem (credited),0.00269
+T2,298,Debtor,Curricular units 1st sem (grade),0.00268
+T2,299,Displaced,Inflation rate,0.00266
+T2,300,Mother's qualification,Displaced,0.00259
+T2,301,Application order,Curricular units 2nd sem (approved),0.00258
+T2,302,Admission grade,Gender,0.00257
+T2,303,Application mode,Mother's qualification,0.00255
+T2,304,Previous qualification (grade),Scholarship holder,0.00255
+T2,305,Curricular units 2nd sem (enrolled),Curricular units 2nd sem (evaluations),0.00254
+T2,306,Application mode,Curricular units 1st sem (enrolled),0.00254
+T2,307,GDP,Curricular units 1st sem (evaluations),0.00253
+T2,308,Admission grade,Curricular units 2nd sem (enrolled),0.00249
+T2,309,Course,Father's qualification,0.00248
+T2,310,Application mode,Curricular units 1st sem (evaluations),0.00245
+T2,311,Mother's qualification,Curricular units 1st sem (grade),0.00244
+T2,312,Mother's occupation,Inflation rate,0.00244
+T2,313,Previous qualification (grade),Curricular units 2nd sem (enrolled),0.00244
+T2,314,Gender,Curricular units 2nd sem (evaluations),0.00241
+T2,315,Mother's occupation,Scholarship holder,0.00240
+T2,316,Father's qualification,Age at enrollment,0.00238
+T2,317,Application mode,Debtor,0.00237
+T2,318,Father's qualification,Curricular units 1st sem (evaluations),0.00236
+T2,319,Curricular units 1st sem (enrolled),Curricular units 1st sem (grade),0.00235
+T2,320,Gender,Age at enrollment,0.00234
+T2,321,Curricular units 2nd sem (credited),Approval ratio 1st sem,0.00232
+T2,322,Previous qualification (grade),Curricular units 1st sem (without evaluations),0.00231
+T2,323,Daytime/evening attendance,Unemployment rate,0.00228
+T2,324,Curricular units 1st sem (approved),Approval ratio 2nd sem,0.00227
+T2,325,Mother's qualification,Gender,0.00226
+T2,326,Curricular units 2nd sem (evaluations),Approval ratio 1st sem,0.00223
+T2,327,Tuition fees up to date,Curricular units 2nd sem (evaluations),0.00223
+T2,328,Mother's occupation,Gender,0.00222
+T2,329,Mother's qualification,Curricular units 2nd sem (credited),0.00221
+T2,330,Marital status,Inflation rate,0.00220
+T2,331,Unemployment rate,GDP,0.00219
+T2,332,Displaced,Curricular units 1st sem (credited),0.00218
+T2,333,Curricular units 1st sem (credited),Approval ratio 2nd sem,0.00218
+T2,334,Curricular units 1st sem (credited),Curricular units 2nd sem (approved),0.00217
+T2,335,Father's occupation,Tuition fees up to date,0.00215
+T2,336,Course,Scholarship holder,0.00213
+T2,337,Mother's qualification,Curricular units 2nd sem (enrolled),0.00212
+T2,338,Application order,Father's occupation,0.00211
+T2,339,Mother's occupation,Curricular units 1st sem (evaluations),0.00209
+T2,340,GDP,Curricular units 2nd sem (approved),0.00206
+T2,341,Course,Curricular units 1st sem (enrolled),0.00205
+T2,342,Admission grade,Debtor,0.00203
+T2,343,Marital status,Father's occupation,0.00202
+T2,344,Curricular units 1st sem (approved),Curricular units 2nd sem (approved),0.00201
+T2,345,Curricular units 1st sem (evaluations),Curricular units 1st sem (approved),0.00201
+T2,346,Displaced,Curricular units 1st sem (grade),0.00198
+T2,347,Mother's qualification,Curricular units 1st sem (without evaluations),0.00198
+T2,348,Mother's occupation,Grade change,0.00198
+T2,349,Tuition fees up to date,Curricular units 1st sem (evaluations),0.00197
+T2,350,Father's occupation,Curricular units 1st sem (enrolled),0.00197
+T2,351,Previous qualification,Approval ratio 2nd sem,0.00195
+T2,352,Application mode,Inflation rate,0.00193
+T2,353,Curricular units 1st sem (evaluations),Approval ratio 2nd sem,0.00192
+T2,354,Mother's qualification,Curricular units 2nd sem (evaluations),0.00191
+T2,355,Previous qualification (grade),Curricular units 1st sem (approved),0.00190
+T2,356,Application mode,Mother's occupation,0.00186
+T2,357,Scholarship holder,Curricular units 2nd sem (grade),0.00184
+T2,358,Application order,Mother's qualification,0.00183
+T2,359,Displaced,Curricular units 1st sem (evaluations),0.00182
+T2,360,Displaced,Gender,0.00182
+T2,361,Course,Curricular units 1st sem (without evaluations),0.00181
+T2,362,Mother's qualification,Age at enrollment,0.00181
+T2,363,Father's occupation,Curricular units 2nd sem (enrolled),0.00178
+T2,364,Curricular units 2nd sem (credited),Curricular units 2nd sem (evaluations),0.00176
+T2,365,Previous qualification (grade),Curricular units 1st sem (credited),0.00174
+T2,366,Course,Curricular units 1st sem (credited),0.00172
+T2,367,Curricular units 1st sem (enrolled),Grade change,0.00170
+T2,368,Application mode,Application order,0.00169
+T2,369,Scholarship holder,Curricular units 2nd sem (approved),0.00169
+T2,370,Curricular units 1st sem (credited),Curricular units 2nd sem (grade),0.00169
+T2,371,Age at enrollment,Debtor,0.00166
+T2,372,Application mode,Curricular units 2nd sem (enrolled),0.00164
+T2,373,GDP,Curricular units 1st sem (approved),0.00162
+T2,374,Marital status,Approval ratio 2nd sem,0.00161
+T2,375,Mother's occupation,Debtor,0.00161
+T2,376,Curricular units 1st sem (credited),Grade change,0.00161
+T2,377,Father's qualification,Tuition fees up to date,0.00160
+T2,378,Mother's qualification,GDP,0.00160
+T2,379,Previous qualification,Curricular units 2nd sem (credited),0.00159
+T2,380,Mother's qualification,Curricular units 1st sem (evaluations),0.00159
+T2,381,Marital status,Curricular units 1st sem (grade),0.00156
+T2,382,Curricular units 1st sem (approved),Curricular units 2nd sem (grade),0.00156
+T2,383,Previous qualification,Curricular units 2nd sem (grade),0.00156
+T2,384,Application mode,Curricular units 2nd sem (credited),0.00155
+T2,385,Application mode,Curricular units 1st sem (grade),0.00155
+T2,386,Curricular units 1st sem (enrolled),Curricular units 2nd sem (enrolled),0.00152
+T2,387,Father's qualification,Debtor,0.00151
+T2,388,Mother's qualification,Inflation rate,0.00148
+T2,389,Application mode,GDP,0.00148
+T2,390,Father's occupation,Curricular units 2nd sem (without evaluations),0.00147
+T2,391,Nacionality,Tuition fees up to date,0.00146
+T2,392,Inflation rate,Debtor,0.00145
+T2,393,Mother's qualification,Tuition fees up to date,0.00145
+T2,394,Curricular units 1st sem (without evaluations),Grade change,0.00144
+T2,395,Curricular units 2nd sem (credited),Curricular units 2nd sem (grade),0.00143
+T2,396,Mother's qualification,Curricular units 1st sem (enrolled),0.00143
+T2,397,Scholarship holder,Curricular units 2nd sem (evaluations),0.00142
+T2,398,Curricular units 1st sem (evaluations),Curricular units 2nd sem (approved),0.00138
+T2,399,Scholarship holder,Curricular units 2nd sem (enrolled),0.00137
+T2,400,Application order,Tuition fees up to date,0.00136
+T2,401,Inflation rate,Curricular units 1st sem (approved),0.00136
+T2,402,GDP,Curricular units 1st sem (enrolled),0.00134
+T2,403,Application order,Curricular units 2nd sem (evaluations),0.00133
+T2,404,Admission grade,Curricular units 2nd sem (credited),0.00133
+T2,405,Scholarship holder,Inflation rate,0.00133
+T2,406,Previous qualification (grade),Curricular units 2nd sem (credited),0.00131
+T2,407,Mother's qualification,Curricular units 2nd sem (grade),0.00131
+T2,408,Application order,Debtor,0.00131
+T2,409,Displaced,Curricular units 1st sem (enrolled),0.00130
+T2,410,Tuition fees up to date,Curricular units 1st sem (credited),0.00130
+T2,411,Gender,Inflation rate,0.00126
+T2,412,Curricular units 1st sem (approved),Approval ratio 1st sem,0.00126
+T2,413,Debtor,Curricular units 2nd sem (evaluations),0.00124
+T2,414,Marital status,Grade change,0.00124
+T2,415,Previous qualification,Father's occupation,0.00124
+T2,416,Admission grade,Curricular units 1st sem (credited),0.00123
+T2,417,Father's qualification,Displaced,0.00122
+T2,418,Unemployment rate,Inflation rate,0.00122
+T2,419,Tuition fees up to date,Curricular units 1st sem (without evaluations),0.00120
+T2,420,Mother's occupation,Curricular units 2nd sem (enrolled),0.00119
+T2,421,Father's qualification,Curricular units 2nd sem (credited),0.00118
+T2,422,Daytime/evening attendance,Inflation rate,0.00118
+T2,423,Application mode,Curricular units 1st sem (credited),0.00117
+T2,424,Debtor,Curricular units 2nd sem (enrolled),0.00117
+T2,425,Mother's qualification,Father's qualification,0.00116
+T2,426,Application order,Displaced,0.00116
+T2,427,Unemployment rate,Curricular units 1st sem (approved),0.00115
+T2,428,Father's qualification,Curricular units 2nd sem (evaluations),0.00111
+T2,429,Father's occupation,Debtor,0.00111
+T2,430,Curricular units 1st sem (approved),Curricular units 2nd sem (enrolled),0.00110
+T2,431,Application order,Curricular units 1st sem (credited),0.00110
+T2,432,Previous qualification (grade),Curricular units 2nd sem (without evaluations),0.00110
+T2,433,Curricular units 2nd sem (credited),Grade change,0.00108
+T2,434,Course,Previous qualification,0.00108
+T2,435,Displaced,Curricular units 1st sem (approved),0.00107
+T2,436,Scholarship holder,Tuition fees up to date,0.00106
+T2,437,Mother's occupation,Curricular units 2nd sem (credited),0.00105
+T2,438,Curricular units 1st sem (credited),Curricular units 2nd sem (enrolled),0.00103
+T2,439,Previous qualification,Grade change,0.00102
+T2,440,Father's occupation,Curricular units 1st sem (approved),0.00102
+T2,441,Curricular units 2nd sem (enrolled),Curricular units 2nd sem (without evaluations),0.00101
+T2,442,Curricular units 1st sem (enrolled),Curricular units 1st sem (approved),0.00099
+T2,443,Previous qualification (grade),Mother's qualification,0.00098
+T2,444,Application mode,Father's qualification,0.00098
+T2,445,Application mode,Curricular units 1st sem (approved),0.00097
+T2,446,Previous qualification,Previous qualification (grade),0.00096
+T2,447,Age at enrollment,Curricular units 2nd sem (credited),0.00095
+T2,448,Curricular units 1st sem (approved),Curricular units 2nd sem (credited),0.00094
+T2,449,Marital status,Approval ratio 1st sem,0.00093
+T2,450,Gender,Debtor,0.00093
+T2,451,Curricular units 2nd sem (without evaluations),Approval ratio 2nd sem,0.00091
+T2,452,Marital status,Father's qualification,0.00091
+T2,453,Inflation rate,GDP,0.00088
+T2,454,Previous qualification,Curricular units 2nd sem (approved),0.00087
+T2,455,Daytime/evening attendance,Curricular units 2nd sem (evaluations),0.00087
+T2,456,Inflation rate,Curricular units 2nd sem (approved),0.00086
+T2,457,Previous qualification,Mother's occupation,0.00084
+T2,458,Previous qualification,Mother's qualification,0.00084
+T2,459,Previous qualification,Curricular units 2nd sem (enrolled),0.00083
+T2,460,Previous qualification,Curricular units 1st sem (grade),0.00082
+T2,461,Father's qualification,Curricular units 1st sem (without evaluations),0.00082
+T2,462,Curricular units 1st sem (without evaluations),Curricular units 2nd sem (grade),0.00081
+T2,463,Gender,Curricular units 1st sem (credited),0.00080
+T2,464,Curricular units 2nd sem (grade),Curricular units 2nd sem (without evaluations),0.00080
+T2,465,Gender,Curricular units 1st sem (without evaluations),0.00080
+T2,466,Mother's qualification,Scholarship holder,0.00079
+T2,467,Daytime/evening attendance,Father's qualification,0.00079
+T2,468,Nacionality,Approval ratio 1st sem,0.00078
+T2,469,Scholarship holder,Debtor,0.00077
+T2,470,Gender,Curricular units 2nd sem (credited),0.00076
+T2,471,Daytime/evening attendance,Gender,0.00076
+T2,472,Inflation rate,Curricular units 1st sem (evaluations),0.00076
+T2,473,Curricular units 1st sem (credited),Curricular units 2nd sem (credited),0.00075
+T2,474,Scholarship holder,Curricular units 1st sem (approved),0.00074
+T2,475,GDP,Curricular units 2nd sem (enrolled),0.00071
+T2,476,Marital status,Unemployment rate,0.00071
+T2,477,Previous qualification,Curricular units 1st sem (evaluations),0.00070
+T2,478,Scholarship holder,GDP,0.00069
+T2,479,Application order,Curricular units 1st sem (evaluations),0.00068
+T2,480,Inflation rate,Curricular units 1st sem (credited),0.00068
+T2,481,Father's qualification,Curricular units 2nd sem (enrolled),0.00067
+T2,482,Curricular units 1st sem (evaluations),Curricular units 1st sem (without evaluations),0.00067
+T2,483,Mother's qualification,Curricular units 1st sem (credited),0.00067
+T2,484,Previous qualification,Inflation rate,0.00067
+T2,485,Marital status,Admission grade,0.00066
+T2,486,Nacionality,Curricular units 2nd sem (evaluations),0.00065
+T2,487,Curricular units 1st sem (grade),Curricular units 2nd sem (without evaluations),0.00065
+T2,488,Marital status,Course,0.00063
+T2,489,Tuition fees up to date,Curricular units 2nd sem (credited),0.00063
+T2,490,Debtor,Curricular units 1st sem (without evaluations),0.00061
+T2,491,Marital status,Tuition fees up to date,0.00060
+T2,492,Age at enrollment,International,0.00059
+T2,493,Mother's occupation,Curricular units 1st sem (approved),0.00058
+T2,494,Curricular units 1st sem (grade),Curricular units 2nd sem (credited),0.00058
+T2,495,Debtor,Grade change,0.00057
+T2,496,Daytime/evening attendance,Age at enrollment,0.00057
+T2,497,Application order,Curricular units 2nd sem (enrolled),0.00056
+T2,498,Age at enrollment,Curricular units 2nd sem (without evaluations),0.00056
+T2,499,Application order,Mother's occupation,0.00056
+T2,500,Displaced,Curricular units 1st sem (without evaluations),0.00054
+T2,501,Inflation rate,Curricular units 2nd sem (enrolled),0.00054
+T2,502,Curricular units 1st sem (without evaluations),Curricular units 2nd sem (evaluations),0.00054
+T2,503,Curricular units 1st sem (approved),Curricular units 1st sem (without evaluations),0.00053
+T2,504,Application mode,Scholarship holder,0.00052
+T2,505,Debtor,Curricular units 1st sem (evaluations),0.00052
+T2,506,Age at enrollment,Curricular units 1st sem (without evaluations),0.00052
+T2,507,Admission grade,Curricular units 1st sem (without evaluations),0.00051
+T2,508,Marital status,Previous qualification (grade),0.00051
+T2,509,Curricular units 1st sem (without evaluations),Approval ratio 1st sem,0.00051
+T2,510,Nacionality,Inflation rate,0.00051
+T2,511,Daytime/evening attendance,Approval ratio 2nd sem,0.00049
+T2,512,Unemployment rate,Curricular units 2nd sem (without evaluations),0.00048
+T2,513,Inflation rate,Curricular units 2nd sem (credited),0.00048
+T2,514,Previous qualification,Tuition fees up to date,0.00048
+T2,515,Mother's occupation,Curricular units 1st sem (enrolled),0.00047
+T2,516,Application order,Scholarship holder,0.00047
+T2,517,GDP,Curricular units 2nd sem (credited),0.00046
+T2,518,Application mode,Daytime/evening attendance,0.00045
+T2,519,Curricular units 1st sem (credited),Curricular units 1st sem (grade),0.00044
+T2,520,Application order,Gender,0.00044
+T2,521,Debtor,Curricular units 1st sem (credited),0.00041
+T2,522,Father's qualification,Curricular units 1st sem (approved),0.00041
+T2,523,Curricular units 2nd sem (without evaluations),Grade change,0.00040
+T2,524,Curricular units 1st sem (enrolled),Curricular units 1st sem (evaluations),0.00040
+T2,525,Debtor,Curricular units 2nd sem (credited),0.00039
+T2,526,Marital status,Scholarship holder,0.00039
+T2,527,Marital status,Application mode,0.00039
+T2,528,Curricular units 2nd sem (approved),Curricular units 2nd sem (without evaluations),0.00039
+T2,529,Curricular units 1st sem (without evaluations),Curricular units 2nd sem (approved),0.00038
+T2,530,Application order,Curricular units 1st sem (without evaluations),0.00038
+T2,531,Gender,Curricular units 1st sem (enrolled),0.00038
+T2,532,Previous qualification,Curricular units 1st sem (credited),0.00038
+T2,533,Father's qualification,International,0.00037
+T2,534,Nacionality,Unemployment rate,0.00037
+T2,535,Application order,Curricular units 1st sem (enrolled),0.00036
+T2,536,Marital status,Curricular units 1st sem (enrolled),0.00035
+T2,537,Curricular units 2nd sem (without evaluations),Approval ratio 1st sem,0.00035
+T2,538,Daytime/evening attendance,Approval ratio 1st sem,0.00034
+T2,539,Marital status,Curricular units 2nd sem (evaluations),0.00033
+T2,540,Marital status,Curricular units 2nd sem (grade),0.00033
+T2,541,Scholarship holder,Curricular units 1st sem (without evaluations),0.00032
+T2,542,Course,International,0.00030
+T2,543,Daytime/evening attendance,Father's occupation,0.00030
+T2,544,Nacionality,Age at enrollment,0.00030
+T2,545,Curricular units 1st sem (without evaluations),Curricular units 2nd sem (enrolled),0.00029
+T2,546,Educational special needs,Curricular units 1st sem (evaluations),0.00028
+T2,547,Marital status,Curricular units 1st sem (evaluations),0.00028
+T2,548,Marital status,Mother's qualification,0.00028
+T2,549,GDP,Curricular units 1st sem (without evaluations),0.00027
+T2,550,Inflation rate,Curricular units 1st sem (enrolled),0.00027
+T2,551,Age at enrollment,Curricular units 1st sem (credited),0.00027
+T2,552,Curricular units 2nd sem (evaluations),Curricular units 2nd sem (without evaluations),0.00025
+T2,553,Marital status,Previous qualification,0.00025
+T2,554,Previous qualification (grade),Educational special needs,0.00024
+T2,555,Educational special needs,Age at enrollment,0.00023
+T2,556,Nacionality,Curricular units 1st sem (enrolled),0.00022
+T2,557,Nacionality,GDP,0.00021
+T2,558,Curricular units 2nd sem (credited),Curricular units 2nd sem (enrolled),0.00021
+T2,559,Previous qualification,Scholarship holder,0.00021
+T2,560,Daytime/evening attendance,Admission grade,0.00020
+T2,561,Previous qualification (grade),Nacionality,0.00019
+T2,562,Curricular units 2nd sem (enrolled),Grade change,0.00018
+T2,563,Application order,Curricular units 2nd sem (credited),0.00018
+T2,564,Marital status,Curricular units 2nd sem (approved),0.00018
+T2,565,Previous qualification,Admission grade,0.00017
+T2,566,Scholarship holder,Curricular units 1st sem (credited),0.00015
+T2,567,Father's qualification,Curricular units 1st sem (credited),0.00015
+T2,568,Scholarship holder,Curricular units 2nd sem (credited),0.00015
+T2,569,GDP,Curricular units 1st sem (credited),0.00015
+T2,570,Curricular units 1st sem (approved),Curricular units 2nd sem (without evaluations),0.00015
+T2,571,Previous qualification,Father's qualification,0.00014
+T2,572,Mother's occupation,Curricular units 1st sem (credited),0.00014
+T2,573,Daytime/evening attendance,Tuition fees up to date,0.00013
+T2,574,Marital status,Curricular units 2nd sem (credited),0.00012
+T2,575,Marital status,Debtor,0.00012
+T2,576,Previous qualification,Age at enrollment,0.00012
+T2,577,Debtor,Curricular units 1st sem (enrolled),0.00012
+T2,578,Previous qualification,Curricular units 1st sem (enrolled),0.00012
+T2,579,International,Approval ratio 1st sem,0.00012
+T2,580,Curricular units 1st sem (enrolled),Curricular units 1st sem (without evaluations),0.00011
+T2,581,Nacionality,Curricular units 2nd sem (grade),0.00011
+T2,582,Nacionality,Admission grade,0.00010
+T2,583,Marital status,Curricular units 1st sem (credited),0.00009
+T2,584,Nacionality,Displaced,0.00009
+T2,585,Father's occupation,Curricular units 1st sem (without evaluations),0.00009
+T2,586,Gender,International,0.00009
+T2,587,Application mode,Nacionality,0.00009
+T2,588,Nacionality,Curricular units 1st sem (approved),0.00008
+T2,589,Curricular units 1st sem (enrolled),Curricular units 2nd sem (without evaluations),0.00008
+T2,590,Debtor,Curricular units 2nd sem (without evaluations),0.00008
+T2,591,Admission grade,Educational special needs,0.00007
+T2,592,Curricular units 1st sem (credited),Curricular units 1st sem (without evaluations),0.00006
+T2,593,Daytime/evening attendance,Mother's occupation,0.00006
+T2,594,Nacionality,Approval ratio 2nd sem,0.00006
+T2,595,Mother's occupation,Curricular units 1st sem (without evaluations),0.00005
+T2,596,Nacionality,Curricular units 2nd sem (enrolled),0.00005
+T2,597,Course,Nacionality,0.00005
+T2,598,Nacionality,Gender,0.00005
+T2,599,Nacionality,Grade change,0.00005
+T2,600,Marital status,Curricular units 1st sem (without evaluations),0.00005
+T2,601,Previous qualification,GDP,0.00005
+T2,602,Marital status,Displaced,0.00005
+T2,603,Previous qualification,Curricular units 2nd sem (evaluations),0.00004
+T2,604,Nacionality,Father's occupation,0.00004
+T2,605,Curricular units 1st sem (credited),Curricular units 2nd sem (without evaluations),0.00004
+T2,606,Nacionality,Mother's occupation,0.00004
+T2,607,Nacionality,Mother's qualification,0.00004
+T2,608,International,Curricular units 2nd sem (evaluations),0.00004
+T2,609,Marital status,Nacionality,0.00003
+T2,610,Nacionality,Curricular units 1st sem (credited),0.00003
+T2,611,Educational special needs,Approval ratio 1st sem,0.00003
+T2,612,Previous qualification,Curricular units 1st sem (without evaluations),0.00003
+T2,613,Marital status,Application order,0.00003
+T2,614,Nacionality,Curricular units 1st sem (grade),0.00003
+T2,615,Marital status,Curricular units 1st sem (approved),0.00002
+T2,616,Nacionality,Curricular units 2nd sem (credited),0.00002
+T2,617,Application order,Educational special needs,0.00001
+T2,618,International,Curricular units 1st sem (without evaluations),0.00001
+T2,619,Daytime/evening attendance,Previous qualification (grade),0.00001
+T2,620,Mother's qualification,Curricular units 1st sem (approved),0.00001
+T2,621,Educational special needs,Curricular units 2nd sem (enrolled),0.00001
+T2,622,Mother's qualification,Debtor,0.00001
+T2,623,Inflation rate,Curricular units 1st sem (without evaluations),0.00001
+T2,624,Daytime/evening attendance,Curricular units 1st sem (without evaluations),0.00000
+T2,625,Educational special needs,Curricular units 2nd sem (grade),0.00000
+T2,626,Father's qualification,Educational special needs,0.00000
+T2,627,Course,Educational special needs,0.00000
+T2,628,Father's qualification,Curricular units 2nd sem (without evaluations),0.00000
+T2,629,Mother's occupation,Educational special needs,0.00000
+T2,630,Displaced,Educational special needs,0.00000
+T2,631,International,Curricular units 1st sem (evaluations),0.00000
+T2,632,International,Curricular units 1st sem (enrolled),0.00000
+T2,633,International,Curricular units 1st sem (credited),0.00000
+T2,634,International,Tuition fees up to date,0.00000
+T2,635,International,Debtor,0.00000
+T2,636,International,GDP,0.00000
+T2,637,International,Curricular units 2nd sem (credited),0.00000
+T2,638,International,Curricular units 2nd sem (without evaluations),0.00000
+T2,639,International,Curricular units 2nd sem (grade),0.00000
+T2,640,International,Curricular units 2nd sem (approved),0.00000
+T2,641,International,Curricular units 2nd sem (enrolled),0.00000
+T2,642,International,Curricular units 1st sem (grade),0.00000
+T2,643,International,Approval ratio 2nd sem,0.00000
+T2,644,Application order,International,0.00000
+T2,645,Course,Daytime/evening attendance,0.00000
+T2,646,International,Unemployment rate,0.00000
+T2,647,Application order,Nacionality,0.00000
+T2,648,Educational special needs,Inflation rate,0.00000
+T2,649,Application order,Previous qualification,0.00000
+T2,650,Educational special needs,Unemployment rate,0.00000
+T2,651,Educational special needs,International,0.00000
+T2,652,International,Inflation rate,0.00000
+T2,653,International,Curricular units 1st sem (approved),0.00000
+T2,654,Educational special needs,Grade change,0.00000
+T2,655,Educational special needs,Approval ratio 2nd sem,0.00000
+T2,656,Curricular units 2nd sem (credited),Curricular units 2nd sem (without evaluations),0.00000
+T2,657,Application mode,Curricular units 2nd sem (without evaluations),0.00000
+T2,658,Scholarship holder,Curricular units 2nd sem (without evaluations),0.00000
+T2,659,Gender,Scholarship holder,0.00000
+T2,660,Gender,Curricular units 2nd sem (without evaluations),0.00000
+T2,661,Scholarship holder,International,0.00000
+T2,662,Educational special needs,Curricular units 1st sem (enrolled),0.00000
+T2,663,Educational special needs,Curricular units 1st sem (credited),0.00000
+T2,664,Educational special needs,Tuition fees up to date,0.00000
+T2,665,Educational special needs,Debtor,0.00000
+T2,666,Educational special needs,GDP,0.00000
+T2,667,Application order,Daytime/evening attendance,0.00000
+T2,668,Educational special needs,Curricular units 1st sem (grade),0.00000
+T2,669,Educational special needs,Curricular units 1st sem (approved),0.00000
+T2,670,Educational special needs,Curricular units 2nd sem (approved),0.00000
+T2,671,Educational special needs,Curricular units 2nd sem (evaluations),0.00000
+T2,672,Educational special needs,Curricular units 2nd sem (credited),0.00000
+T2,673,Educational special needs,Curricular units 1st sem (without evaluations),0.00000
+T2,674,Educational special needs,Curricular units 2nd sem (without evaluations),0.00000
+T2,675,Displaced,Curricular units 2nd sem (without evaluations),0.00000
+T2,676,Educational special needs,Gender,0.00000
+T2,677,Educational special needs,Scholarship holder,0.00000
+T2,678,Marital status,Curricular units 2nd sem (enrolled),0.00000
+T2,679,Marital status,Gender,0.00000
+T2,680,Marital status,International,0.00000
+T2,681,Marital status,Educational special needs,0.00000
+T2,682,Mother's occupation,International,0.00000
+T2,683,Father's occupation,International,0.00000
+T2,684,Mother's occupation,Curricular units 2nd sem (without evaluations),0.00000
+T2,685,Father's occupation,Educational special needs,0.00000
+T2,686,Application mode,International,0.00000
+T2,687,Application mode,Educational special needs,0.00000
+T2,688,International,Grade change,0.00000
+T2,689,Displaced,International,0.00000
+T2,690,Admission grade,Curricular units 2nd sem (without evaluations),0.00000
+T2,691,Application order,Curricular units 1st sem (approved),0.00000
+T2,692,Admission grade,International,0.00000
+T2,693,Application order,Curricular units 2nd sem (without evaluations),0.00000
+T2,694,GDP,Curricular units 2nd sem (without evaluations),0.00000
+T2,695,Mother's qualification,International,0.00000
+T2,696,Mother's qualification,Educational special needs,0.00000
+T2,697,Mother's qualification,Curricular units 2nd sem (without evaluations),0.00000
+T2,698,Nacionality,Debtor,0.00000
+T2,699,Marital status,Curricular units 2nd sem (without evaluations),0.00000
+T2,700,Inflation rate,Curricular units 2nd sem (without evaluations),0.00000
+T2,701,Daytime/evening attendance,International,0.00000
+T2,702,Nacionality,Curricular units 2nd sem (without evaluations),0.00000
+T2,703,Nacionality,Father's qualification,0.00000
+T2,704,Application mode,Previous qualification,0.00000
+T2,705,Nacionality,Curricular units 2nd sem (approved),0.00000
+T2,706,Nacionality,Educational special needs,0.00000
+T2,707,Nacionality,Scholarship holder,0.00000
+T2,708,Nacionality,Curricular units 1st sem (evaluations),0.00000
+T2,709,Nacionality,Curricular units 1st sem (without evaluations),0.00000
+T2,710,Daytime/evening attendance,Nacionality,0.00000
+T2,711,Daytime/evening attendance,Previous qualification,0.00000
+T2,712,Previous qualification,Curricular units 2nd sem (without evaluations),0.00000
+T2,713,Previous qualification (grade),International,0.00000
+T2,714,Tuition fees up to date,Curricular units 2nd sem (without evaluations),0.00000
+T2,715,Nacionality,International,0.00000
+T2,716,Daytime/evening attendance,Scholarship holder,0.00000
+T2,717,Previous qualification,Curricular units 1st sem (approved),0.00000
+T2,718,Daytime/evening attendance,Displaced,0.00000
+T2,719,Daytime/evening attendance,Educational special needs,0.00000
+T2,720,Previous qualification,International,0.00000
+T2,721,Daytime/evening attendance,Mother's qualification,0.00000
+T2,722,Previous qualification,Debtor,0.00000
+T2,723,Curricular units 1st sem (evaluations),Curricular units 2nd sem (without evaluations),0.00000
+T2,724,Daytime/evening attendance,Curricular units 2nd sem (enrolled),0.00000
+T2,725,Daytime/evening attendance,Curricular units 2nd sem (approved),0.00000
+T2,726,Daytime/evening attendance,Grade change,0.00000
+T2,727,Previous qualification,Nacionality,0.00000
+T2,728,Daytime/evening attendance,Curricular units 2nd sem (without evaluations),0.00000
+T2,729,Daytime/evening attendance,Curricular units 2nd sem (grade),0.00000
+T2,730,Daytime/evening attendance,Curricular units 1st sem (grade),0.00000
+T2,731,Daytime/evening attendance,Debtor,0.00000
+T2,732,Daytime/evening attendance,GDP,0.00000
+T2,733,Previous qualification,Educational special needs,0.00000
+T2,734,Curricular units 1st sem (without evaluations),Curricular units 2nd sem (credited),0.00000
+T2,735,Daytime/evening attendance,Curricular units 1st sem (approved),0.00000
+T2,736,Daytime/evening attendance,Curricular units 1st sem (evaluations),0.00000
+T2,737,Daytime/evening attendance,Curricular units 1st sem (enrolled),0.00000
+T2,738,Daytime/evening attendance,Curricular units 1st sem (credited),0.00000
+T2,739,Curricular units 1st sem (without evaluations),Curricular units 2nd sem (without evaluations),0.00000
+T2,740,Daytime/evening attendance,Curricular units 2nd sem (credited),0.00000
+T2,741,Marital status,Daytime/evening attendance,0.00000
