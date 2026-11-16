@@ -3,7 +3,7 @@
 Capstone project on the UCI *Predict Students' Dropout and Academic Success* dataset
 (4,424 students, 36 features; https://archive.ics.uci.edu/dataset/697).
 Target: **Dropout / Enrolled / Graduate** (3 classes). A binary Dropout-vs-Graduate
-variant (as described in the proposal) runs from the same code with `--task binary`.
+variant runs from the same code with `--task binary`.
 
 ## Repository layout
 
@@ -18,7 +18,7 @@ src/explain.py           SHAP analysis: global bar and beeswarm plots, interacti
 results/<task>/          cv_summary.csv, cv_fold_metrics.csv, oof_predictions.csv,
                          best_params.json, confusion_matrices.json,
                          shap_importance.csv, shap_interactions.csv
-models/<task>/           final tuned models per stage (git-ignored; re-create with train.py)
+models/<task>/           final tuned models per stage 
 figures/                 generated figures
 notebooks/               EDA, embeddings, SHAP, fairness notebooks
 ```
