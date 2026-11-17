@@ -94,10 +94,9 @@ are fitted on the training part of each fold only.
 `python -m src.explain --task multiclass` explains the tuned XGBoost model of each stage.
 The explained output is the model's **Dropout score on the log-odds scale**, so a positive
 SHAP value pushes a student towards Dropout. Values are exact TreeSHAP from XGBoost's
-built-in implementation (`pred_contribs`, `pred_interactions`), which is what
-`shap.TreeExplainer` returns for an XGBoost model; the `shap` package is not required.
-When the values are computed, the script checks that contributions sum to the model
-output for every student.
+built-in implementation (`pred_contribs`, `pred_interactions`); the script does not use
+the `shap` package. When the values are computed, the script checks that contributions
+sum to the model output for every student.
 
 | Figure | Shows |
 |---|---|
@@ -261,10 +260,13 @@ output scales, so compare ranks and shares between them, not raw magnitudes.
 ## Using the outputs
 
 - **SHAP (Member 1):** `joblib.load("models/multiclass/T1_XGBoost.joblib")` returns
-  `{"model", "features", "classes"}`; pass `model.named_steps["clf"]` to `shap.TreeExplainer`.
-  `src/explain.py` re-creates the joblib from `best_params.json` when it is missing and
-  caches the SHAP arrays as `models/<task>/<stage>_XGBoost_shap.npz` (`phi`: students ×
+  `{"model", "features", "classes"}`. `src/explain.py` re-creates the joblib from
+  `best_params.json` when it is missing, computes the SHAP values with XGBoost's built-in
+  TreeSHAP and caches them as `models/<task>/<stage>_XGBoost_shap.npz` (`phi`: students ×
   classes × features, `inter`: Dropout interaction values).
+  `notebooks/shap_analysis.ipynb` loads these cached arrays for tables and plots.
+  `shap.TreeExplainer` is not used: with the pinned versions (shap 0.49.1, xgboost 3.2.0)
+  it cannot load the models, and for XGBoost it would return the same values.
 - **Fairness (Member 2):** `results/<task>/oof_predictions.csv` holds out-of-fold class
   probabilities and predictions for every student, stage and model; `row` is the row index
   in `data.csv`, so join on it to get Gender and Scholarship holder.
