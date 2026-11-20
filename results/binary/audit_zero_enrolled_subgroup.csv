@@ -1,0 +1,37 @@
+experiment,stage,model,enrollment_group,n,actual_dropout_rate,predicted_dropout_rate,dropout_recall,dropout_f1,dropout_roc_auc,brier
+baseline,T1,LogisticRegression,No units enrolled (n=180),152,0.50658,0.64474,0.80519,0.70857,0.71931,0.22340
+baseline,T1,LogisticRegression,"Enrolled >0, Approved =0 (n=538)",495,0.99596,0.99798,0.99797,0.99696,0.63895,0.00481
+baseline,T1,RandomForest,No units enrolled (n=180),152,0.50658,0.66447,0.77922,0.67416,0.67117,0.23592
+baseline,T1,RandomForest,"Enrolled >0, Approved =0 (n=538)",495,0.99596,1.00000,1.00000,0.99798,0.50101,0.00464
+baseline,T1,XGBoost,No units enrolled (n=180),152,0.50658,0.53289,0.71429,0.69620,0.72139,0.21612
+baseline,T1,XGBoost,"Enrolled >0, Approved =0 (n=538)",495,0.99596,1.00000,1.00000,0.99798,0.82657,0.00432
+baseline,T2,LogisticRegression,No units enrolled (n=180),152,0.50658,0.69079,0.80519,0.68132,0.71411,0.22649
+baseline,T2,LogisticRegression,"Enrolled >0, Approved =0 (n=538)",495,0.99596,1.00000,1.00000,0.99798,1.00000,0.00213
+baseline,T2,RandomForest,No units enrolled (n=180),152,0.50658,0.62500,0.76623,0.68605,0.69939,0.22637
+baseline,T2,RandomForest,"Enrolled >0, Approved =0 (n=538)",495,0.99596,0.99798,1.00000,0.99899,1.00000,0.00120
+baseline,T2,XGBoost,No units enrolled (n=180),152,0.50658,0.53289,0.71429,0.69620,0.72623,0.21441
+baseline,T2,XGBoost,"Enrolled >0, Approved =0 (n=538)",495,0.99596,0.99798,1.00000,0.99899,1.00000,0.00089
+ratio_flagged,T1,LogisticRegression,No units enrolled (n=180),152,0.50658,0.59868,0.76623,0.70238,0.73074,0.21626
+ratio_flagged,T1,LogisticRegression,"Enrolled >0, Approved =0 (n=538)",495,0.99596,1.00000,1.00000,0.99798,0.39959,0.00407
+ratio_flagged,T1,RandomForest,No units enrolled (n=180),152,0.50658,0.55921,0.72727,0.69136,0.71342,0.22016
+ratio_flagged,T1,RandomForest,"Enrolled >0, Approved =0 (n=538)",495,0.99596,1.00000,1.00000,0.99798,0.60598,0.00491
+ratio_flagged,T1,XGBoost,No units enrolled (n=180),152,0.50658,0.48684,0.63636,0.64901,0.71671,0.21994
+ratio_flagged,T1,XGBoost,"Enrolled >0, Approved =0 (n=538)",495,0.99596,1.00000,1.00000,0.99798,0.53651,0.00438
+ratio_flagged,T2,LogisticRegression,No units enrolled (n=180),152,0.50658,0.51974,0.70130,0.69231,0.73489,0.21279
+ratio_flagged,T2,LogisticRegression,"Enrolled >0, Approved =0 (n=538)",495,0.99596,1.00000,1.00000,0.99798,0.98580,0.00387
+ratio_flagged,T2,RandomForest,No units enrolled (n=180),152,0.50658,0.55921,0.71429,0.67901,0.69160,0.22588
+ratio_flagged,T2,RandomForest,"Enrolled >0, Approved =0 (n=538)",495,0.99596,0.99798,1.00000,0.99899,1.00000,0.00097
+ratio_flagged,T2,XGBoost,No units enrolled (n=180),152,0.50658,0.53947,0.71429,0.69182,0.69870,0.23519
+ratio_flagged,T2,XGBoost,"Enrolled >0, Approved =0 (n=538)",495,0.99596,0.99798,1.00000,0.99899,1.00000,0.00166
+no_financial_flags,T1,LogisticRegression,No units enrolled (n=180),152,0.50658,0.75000,0.79221,0.63874,0.57610,0.26763
+no_financial_flags,T1,LogisticRegression,"Enrolled >0, Approved =0 (n=538)",495,0.99596,1.00000,1.00000,0.99798,0.22414,0.00429
+no_financial_flags,T1,RandomForest,No units enrolled (n=180),152,0.50658,0.61842,0.70130,0.63158,0.62165,0.25161
+no_financial_flags,T1,RandomForest,"Enrolled >0, Approved =0 (n=538)",495,0.99596,1.00000,1.00000,0.99798,0.42596,0.00545
+no_financial_flags,T1,XGBoost,No units enrolled (n=180),152,0.50658,0.53947,0.68831,0.66667,0.68173,0.22847
+no_financial_flags,T1,XGBoost,"Enrolled >0, Approved =0 (n=538)",495,0.99596,1.00000,1.00000,0.99798,0.69067,0.00439
+no_financial_flags,T2,LogisticRegression,No units enrolled (n=180),152,0.50658,0.80921,0.88312,0.68000,0.56745,0.26747
+no_financial_flags,T2,LogisticRegression,"Enrolled >0, Approved =0 (n=538)",495,0.99596,1.00000,1.00000,0.99798,0.99797,0.00297
+no_financial_flags,T2,RandomForest,No units enrolled (n=180),152,0.50658,0.56579,0.70130,0.66258,0.65108,0.23673
+no_financial_flags,T2,RandomForest,"Enrolled >0, Approved =0 (n=538)",495,0.99596,0.99798,1.00000,0.99899,1.00000,0.00118
+no_financial_flags,T2,XGBoost,No units enrolled (n=180),152,0.50658,0.55263,0.67532,0.64596,0.66926,0.23731
+no_financial_flags,T2,XGBoost,"Enrolled >0, Approved =0 (n=538)",495,0.99596,0.99798,1.00000,0.99899,1.00000,0.00156
