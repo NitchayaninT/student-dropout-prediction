@@ -1,0 +1,10 @@
+task,source,stage,model,n_enrolled,p_dropout_mean,p_dropout_median,p_dropout_q25,p_dropout_q75,pct_pred_dropout,pct_p_ge_050,pct_p_ge_070,mean_p_male,mean_p_female,mean_p_no_scholar,mean_p_scholar
+multiclass,oof_multiclass,T0,LogisticRegression,794,0.29268,0.26604,0.15541,0.40583,0.24559,0.12720,0.03023,0.36062,0.24985,0.31897,0.15836
+multiclass,oof_multiclass,T0,RandomForest,794,0.31899,0.29359,0.21923,0.39661,0.28463,0.11839,0.01511,0.37131,0.28600,0.34566,0.18274
+multiclass,oof_multiclass,T0,XGBoost,794,0.31283,0.27171,0.14149,0.44493,0.29723,0.20781,0.06045,0.39566,0.26062,0.34441,0.15154
+multiclass,oof_multiclass,T1,LogisticRegression,794,0.24686,0.17545,0.07513,0.34827,0.18262,0.14358,0.06045,0.29463,0.21674,0.25709,0.19459
+multiclass,oof_multiclass,T1,RandomForest,794,0.28356,0.23257,0.13772,0.38084,0.20151,0.13350,0.04660,0.31922,0.26108,0.29391,0.23069
+multiclass,oof_multiclass,T1,XGBoost,794,0.28576,0.21183,0.09090,0.40497,0.24307,0.19647,0.08816,0.33572,0.25427,0.30016,0.21223
+multiclass,oof_multiclass,T2,LogisticRegression,794,0.23465,0.16015,0.07419,0.33277,0.15617,0.12343,0.05290,0.28289,0.20425,0.24589,0.17727
+multiclass,oof_multiclass,T2,RandomForest,794,0.27144,0.22134,0.12957,0.35165,0.15995,0.11965,0.05542,0.31085,0.24660,0.28343,0.21023
+multiclass,oof_multiclass,T2,XGBoost,794,0.27120,0.18808,0.06618,0.40439,0.21159,0.17884,0.08438,0.32465,0.23750,0.28919,0.17930

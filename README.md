@@ -15,6 +15,9 @@ src/models.py            LR / RF / XGBoost pipelines + search spaces
 src/train.py             nested stratified CV, metrics, OOF predictions, final models
 src/plot_results.py      stage-comparison figure
 src/explain.py           SHAP analysis: global bar and beeswarm plots, interactions
+src/fairness.py          subgroup & intersectional fairness audit, Enrolled risk summary
+src/ablation.py          demographic ablation study (accuracy-fairness trade-off)
+src/audit_features.py    data quality audit, zero-enrolled flags & financial sensitivity
 results/<task>/          cv_summary.csv, cv_fold_metrics.csv, oof_predictions.csv,
                          best_params.json, confusion_matrices.json,
                          shap_importance.csv, shap_interactions.csv
@@ -32,6 +35,12 @@ python -m src.train --task binary
 python -m src.plot_results --task multiclass
 python -m src.explain --task multiclass  # SHAP; about 4 min first run, then cached
 python -m src.explain --task binary
+python -m src.audit_features --task multiclass  # data audit + sensitivity checks
+python -m src.audit_features --task binary
+python -m src.fairness --task multiclass        # subgroup & intersectional fairness
+python -m src.fairness --task binary
+python -m src.ablation --task multiclass        # demographic ablation (paired nested CV)
+python -m src.ablation --task binary
 ```
 
 ## Chronological stages (leakage control)
@@ -271,3 +280,132 @@ output scales, so compare ranks and shares between them, not raw magnitudes.
   probabilities and predictions for every student, stage and model; `row` is the row index
   in `data.csv`, so join on it to get Gender and Scholarship holder.
 - **Embeddings (Member 3):** colour points by `p_Dropout` from the same file.
+
+## Data audit, fairness evaluation & demographic ablation (Part 2)
+
+Part 2 audits leakage and feature edge cases (`src/audit_features.py`), evaluates
+subgroup and intersectional fairness on out-of-fold predictions (`src/fairness.py`),
+and measures the accuracy–fairness trade-off when demographic and socioeconomic
+features are removed (`src/ablation.py`). All experiments reuse the exact nested
+stratified 5-fold CV splits (seed 42) and pipelines from Part 1 so comparisons are
+strictly paired.
+
+| Figure | Shows |
+|---|---|
+| `figures/eda_subgroups.png` | Observed dropout rates across Gender, Scholarship, and Tuition fees |
+| `figures/eda_edge_cases.png` | Outcome breakdown separating `enrolled = 0` (Course 171) from `enrolled > 0, approved = 0` |
+| `figures/fairness_gaps_<task>.png` | Signed ΔTPR, ΔFPR, and ΔSelection Rate across T0, T1, T2 for all 3 models |
+| `figures/fairness_subgroups_<task>.png` | Subgroup TPR and FPR trajectories for XGBoost across stages |
+| `figures/fairness_intersectional_<task>.png` | 2×2 Gender × Scholarship heatmaps (TPR and FPR) for XGBoost |
+| `figures/ablation_tradeoff_<task>.png` | Predictive ROC-AUC vs Gender and Scholarship \|ΔTPR\| across ablation variants |
+| `figures/audit_sensitivity_<task>.png` | Sensitivity of T1/T2 Dropout ROC-AUC to zero-enrolled flags and removing financial flags |
+
+Full tables: `results/data_audit_report.json` and, under `results/<task>/`,
+`fairness_subgroups.csv`, `fairness_gaps.csv`, `fairness_intersectional.csv`,
+`enrolled_risk_summary.csv`, `ablation_summary.csv`, `ablation_fairness_gaps.csv`,
+`audit_summary.csv`, and `audit_zero_enrolled_subgroup.csv`.
+
+### Subgroup fairness across chronological stages (XGBoost, OOF)
+
+Signed gaps are defined as `Male − Female` (Gender) and `Non-Scholarship − Scholarship`
+(Scholarship holder); `0.000` represents parity. Bootstrap 95% CIs are in brackets for ΔTPR.
+
+| Task | Stage | Attribute | ΔTPR (Equal Opportunity) | ΔFPR (Predictive Equality) | ΔSelection Rate |
+|---|---|---|---|---|---|
+| 3-class | T0 | Gender | +0.246 [0.195, 0.296] | +0.260 | +0.319 |
+| 3-class | T1 | Gender | +0.092 [0.044, 0.135] | +0.096 | +0.220 |
+| 3-class | T2 | Gender | +0.071 [0.028, 0.114] | +0.084 | +0.214 |
+| 3-class | T0 | Scholarship holder | +0.410 [0.335, 0.482] | +0.254 | +0.362 |
+| 3-class | T1 | Scholarship holder | +0.345 [0.264, 0.428] | +0.093 | +0.297 |
+| 3-class | T2 | Scholarship holder | +0.240 [0.160, 0.326] | +0.072 | +0.276 |
+| Binary | T0 | Gender | +0.336 [0.288, 0.384] | +0.296 | +0.409 |
+| Binary | T1 | Gender | +0.103 [0.063, 0.147] | +0.066 | +0.273 |
+| Binary | T2 | Gender | +0.083 [0.047, 0.118] | +0.043 | +0.266 |
+| Binary | T0 | Scholarship holder | +0.550 [0.486, 0.612] | +0.258 | +0.436 |
+| Binary | T1 | Scholarship holder | +0.363 [0.276, 0.445] | +0.055 | +0.363 |
+| Binary | T2 | Scholarship holder | +0.266 [0.180, 0.348] | +0.029 | +0.344 |
+
+![Fairness gaps, 3-class](figures/fairness_gaps_multiclass.png)
+
+![Fairness gaps, binary](figures/fairness_gaps_binary.png)
+
+### Demographic ablation: accuracy–fairness trade-off (XGBoost)
+
+Variants drop progressively broader background blocks: `no_sensitive` (Gender, Scholarship
+holder; 2 features), `no_demographic` (7 personal demographic features), and `no_demo_socio`
+(12 demographic + socioeconomic features). Fairness gaps are always evaluated against the
+true Gender and Scholarship labels.
+
+| Task | Stage | Variant | Features | Dropout ROC-AUC (Δ vs full) | Gender ΔTPR / ΔFPR | Scholarship ΔTPR / ΔFPR |
+|---|---|---|---|---|---|---|
+| 3-class | T0 | `full` | 22 | 0.766 (—) | +0.246 / +0.260 | +0.410 / +0.254 |
+| 3-class | T0 | `no_sensitive` | 20 | 0.747 (−0.019) | +0.134 / +0.147 | +0.151 / +0.114 |
+| 3-class | T0 | `no_demo_socio` | 10 | 0.705 (−0.060) | +0.099 / +0.139 | +0.136 / +0.092 |
+| 3-class | T1 | `full` | 31 | 0.906 (—) | +0.092 / +0.096 | +0.345 / +0.093 |
+| 3-class | T1 | `no_sensitive` | 29 | 0.902 (−0.004) | +0.051 / +0.057 | +0.290 / +0.070 |
+| 3-class | T1 | `no_demographic` | 24 | 0.904 (−0.002) | +0.055 / +0.058 | +0.350 / +0.094 |
+| 3-class | T1 | `no_demo_socio` | 19 | 0.895 (−0.011) | +0.063 / +0.063 | +0.260 / +0.052 |
+| 3-class | T2 | `full` | 39 | 0.925 (—) | +0.071 / +0.084 | +0.240 / +0.072 |
+| 3-class | T2 | `no_sensitive` | 37 | 0.925 (+0.000) | +0.040 / +0.067 | +0.213 / +0.069 |
+| 3-class | T2 | `no_demographic` | 32 | 0.925 (+0.000) | +0.022 / +0.064 | +0.248 / +0.069 |
+| 3-class | T2 | `no_demo_socio` | 27 | 0.922 (−0.003) | +0.036 / +0.074 | +0.204 / +0.062 |
+| Binary | T0 | `full` | 22 | 0.808 (—) | +0.336 / +0.296 | +0.550 / +0.258 |
+| Binary | T0 | `no_sensitive` | 20 | 0.780 (−0.027) | +0.159 / +0.151 | +0.186 / +0.125 |
+| Binary | T0 | `no_demo_socio` | 10 | 0.762 (−0.045) | +0.152 / +0.135 | +0.163 / +0.093 |
+| Binary | T1 | `full` | 31 | 0.940 (—) | +0.103 / +0.066 | +0.363 / +0.055 |
+| Binary | T1 | `no_sensitive` | 29 | 0.936 (−0.004) | +0.064 / +0.029 | +0.272 / +0.025 |
+| Binary | T1 | `no_demographic` | 24 | 0.937 (−0.002) | +0.068 / +0.031 | +0.361 / +0.059 |
+| Binary | T1 | `no_demo_socio` | 19 | 0.934 (−0.006) | +0.074 / +0.039 | +0.267 / +0.021 |
+| Binary | T2 | `full` | 39 | 0.958 (—) | +0.083 / +0.043 | +0.266 / +0.029 |
+| Binary | T2 | `no_sensitive` | 37 | 0.955 (−0.003) | +0.082 / +0.027 | +0.198 / +0.009 |
+| Binary | T2 | `no_demographic` | 32 | 0.957 (−0.001) | +0.072 / +0.030 | +0.246 / +0.034 |
+| Binary | T2 | `no_demo_socio` | 27 | 0.957 (−0.001) | +0.089 / +0.025 | +0.217 / +0.002 |
+
+![Ablation trade-off, 3-class](figures/ablation_tradeoff_multiclass.png)
+
+![Ablation trade-off, binary](figures/ablation_tradeoff_binary.png)
+
+### Feature engineering & financial leakage sensitivity (T1 & T2, XGBoost)
+
+| Task | Stage | Experiment | Features | Macro F1 (Δ) | Dropout ROC-AUC (Δ) | Dropout F1 (Δ) |
+|---|---|---|---|---|---|---|
+| 3-class | T1 | `ratio_flagged` (+ zero-enrolled flags) | 32 | 0.676 (+0.012) | 0.902 (−0.003) | 0.770 (+0.003) |
+| 3-class | T1 | `no_financial_flags` (drop Debtor & Tuition) | 29 | 0.637 (−0.027) | 0.883 (−0.023) | 0.726 (−0.041) |
+| 3-class | T2 | `ratio_flagged` (+ zero-enrolled flags) | 42 | 0.708 (+0.003) | 0.927 (+0.002) | 0.799 (+0.003) |
+| 3-class | T2 | `no_financial_flags` (drop Debtor & Tuition) | 37 | 0.682 (−0.023) | 0.909 (−0.016) | 0.763 (−0.034) |
+| Binary | T1 | `ratio_flagged` (+ zero-enrolled flags) | 32 | 0.881 (−0.003) | 0.939 (−0.000) | 0.850 (−0.004) |
+| Binary | T1 | `no_financial_flags` (drop Debtor & Tuition) | 29 | 0.863 (−0.021) | 0.929 (−0.011) | 0.829 (−0.025) |
+| Binary | T2 | `ratio_flagged` (+ zero-enrolled flags) | 42 | 0.910 (+0.001) | 0.958 (−0.001) | 0.888 (+0.002) |
+| Binary | T2 | `no_financial_flags` (drop Debtor & Tuition) | 37 | 0.896 (−0.013) | 0.950 (−0.009) | 0.869 (−0.017) |
+
+![Audit sensitivity, 3-class](figures/audit_sensitivity_multiclass.png)
+
+### Key findings (Part 2)
+
+1. **Academic records sharply reduce subgroup disparities:** Moving from T0 to T2 cuts
+   XGBoost Gender ΔTPR by 71% in the 3-class model (+0.246 → +0.071) and 75% in the binary
+   model (+0.336 → +0.083), and reduces Gender ΔFPR by 68% and 86% respectively.
+2. **Equal Opportunity remains wider for Scholarship holders than for Gender:** While
+   Scholarship ΔFPR falls to +0.072 (3-class) and +0.029 (binary) at T2, ΔTPR stays elevated
+   (+0.240 and +0.266) because scholarship holders have a much lower base dropout rate
+   (12% vs 39%), leading to more false negatives among at-risk scholarship students.
+3. **Dropping sensitive/demographic features after Semester 1 is nearly free in accuracy and
+   meaningfully improves fairness:** At T1 and T2, every ablation variant—even dropping all
+   12 demographic and socioeconomic features—changes binary ROC-AUC by at most −0.006 (T1)
+   and −0.003 (T2), and 3-class Dropout ROC-AUC by at most −0.011 (T1) and −0.004 (T2). In
+   return, `no_sensitive` cuts 3-class Gender ΔTPR by 45% at T1 (+0.092 → +0.051), and
+   `no_demo_socio` drives binary Scholarship ΔFPR to near parity at T2 (+0.029 → +0.002).
+4. **Fairness through unawareness does not eliminate all gaps:** Residual disparities remain
+   under `no_demo_socio` (e.g., binary Scholarship ΔTPR = +0.217 at T2) due to correlated
+   proxies such as `Course` and underlying base-rate differences. Operational deployment
+   should combine demographic ablation at T1/T2 with group-specific threshold calibration if
+   Equal Opportunity for scholarship holders is a priority.
+5. **Domain-ratio refinement (`enrolled = 0`) and financial-flag robustness:** Structural
+   auditing confirms that all 180 zero-enrolled students are identical across both semesters
+   and belong exclusively to `Course == 171` (42.8% dropout vs 91.6% among the 538 students
+   who enrolled and passed 0 units). Adding explicit zero-enrolled flags raises 3-class T1
+   Macro F1 for Logistic Regression (+0.010) and XGBoost (+0.012) and binary Dropout F1 for
+   Logistic Regression (+0.004 at T1, +0.005 at T2). Removing `Debtor` and
+   `Tuition fees up to date` lowers Dropout ROC-AUC by 0.011–0.024 at T1 and 0.005–0.016 at
+   T2, yet purely academic models still achieve strong early-warning accuracy (binary
+   ROC-AUC 0.929 at T1, 0.950 at T2; 3-class Dropout ROC-AUC 0.883 at T1, 0.909 at T2).

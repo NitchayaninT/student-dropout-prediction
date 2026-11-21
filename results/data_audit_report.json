@@ -1,0 +1,119 @@
+{
+  "n_rows": 4424,
+  "n_cols": 37,
+  "missing_values": 0,
+  "duplicate_rows": 0,
+  "target_counts": {
+    "Graduate": 2209,
+    "Dropout": 1421,
+    "Enrolled": 794
+  },
+  "binary_cohort_n": 3630,
+  "enrolled_cohort_n": 794,
+  "scale_ranges": {
+    "Previous qualification (grade)": [
+      95.0,
+      190.0
+    ],
+    "Admission grade": [
+      95.0,
+      190.0
+    ],
+    "Curricular units 1st sem (grade)": [
+      0.0,
+      18.875
+    ],
+    "Curricular units 2nd sem (grade)": [
+      0.0,
+      18.571428571428573
+    ]
+  },
+  "macro_unique_cohort_profiles": 10,
+  "edge_cases": {
+    "1st_sem": {
+      "enrolled_eq_0_n": 180,
+      "enrolled_eq_0_targets": {
+        "Dropout": 77,
+        "Graduate": 75,
+        "Enrolled": 28
+      },
+      "enrolled_eq_0_courses": {
+        "171": 180
+      },
+      "enrolled_gt_0_approved_eq_0_n": 538,
+      "enrolled_gt_0_approved_eq_0_targets": {
+        "Dropout": 493,
+        "Enrolled": 43,
+        "Graduate": 2
+      },
+      "grade_eq_0_n": 718
+    },
+    "2nd_sem": {
+      "enrolled_eq_0_n": 180,
+      "enrolled_eq_0_targets": {
+        "Dropout": 77,
+        "Graduate": 75,
+        "Enrolled": 28
+      },
+      "enrolled_eq_0_courses": {
+        "171": 180
+      },
+      "enrolled_gt_0_approved_eq_0_n": 690,
+      "enrolled_gt_0_approved_eq_0_targets": {
+        "Dropout": 650,
+        "Enrolled": 40
+      },
+      "grade_eq_0_n": 870
+    },
+    "same_students_zero_enrolled_both_sems": true,
+    "grade_change_one_sem_zero_n": 236
+  },
+  "leakage_guard_checks": {
+    "multiclass": {
+      "T0": {
+        "n_rows": 4424,
+        "n_features": 22,
+        "has_sem1_cols": false,
+        "has_sem2_cols": false,
+        "has_financial_cols": false
+      },
+      "T1": {
+        "n_rows": 4424,
+        "n_features": 31,
+        "has_sem1_cols": true,
+        "has_sem2_cols": false,
+        "has_financial_cols": true
+      },
+      "T2": {
+        "n_rows": 4424,
+        "n_features": 39,
+        "has_sem1_cols": true,
+        "has_sem2_cols": true,
+        "has_financial_cols": true
+      }
+    },
+    "binary": {
+      "T0": {
+        "n_rows": 3630,
+        "n_features": 22,
+        "has_sem1_cols": false,
+        "has_sem2_cols": false,
+        "has_financial_cols": false
+      },
+      "T1": {
+        "n_rows": 3630,
+        "n_features": 31,
+        "has_sem1_cols": true,
+        "has_sem2_cols": false,
+        "has_financial_cols": true
+      },
+      "T2": {
+        "n_rows": 3630,
+        "n_features": 39,
+        "has_sem1_cols": true,
+        "has_sem2_cols": true,
+        "has_financial_cols": true
+      }
+    }
+  }
+}
