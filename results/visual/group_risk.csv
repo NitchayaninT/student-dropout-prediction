@@ -1,0 +1,19 @@
+attribute,group,n_resolved,observed_dropout_rate,ci_lo,ci_hi,mean_risk_T0,mean_risk_T1,mean_risk_T2
+Age at enrollment,Age 20 or under,2080,0.2606,0.2422,0.2799,0.2629,0.2625,0.2621
+Age at enrollment,Age 21 to 24,574,0.4321,0.3921,0.4729,0.4313,0.4321,0.4342
+Age at enrollment,Age 25 to 29,355,0.6930,0.6431,0.7387,0.6722,0.6820,0.6678
+Age at enrollment,Age 30 or over,621,0.6200,0.5812,0.6573,0.6257,0.6170,0.6097
+Gender,Female,2381,0.3024,0.2843,0.3211,0.3045,0.3059,0.3038
+Gender,Male,1249,0.5612,0.5336,0.5885,0.5577,0.5532,0.5499
+Scholarship holder,Scholarship,969,0.1383,0.1180,0.1615,0.1449,0.1486,0.1515
+Scholarship holder,No scholarship,2661,0.4837,0.4647,0.5027,0.4814,0.4793,0.4747
+Tuition fees up to date,Fees up to date,3144,0.3066,0.2907,0.3230,0.3642,0.3088,0.3064
+Tuition fees up to date,Fees behind,486,0.9403,0.9156,0.9581,0.5691,0.9224,0.9194
+Debtor,Not in debt,3217,0.3447,0.3285,0.3613,0.3792,0.3470,0.3452
+Debtor,Debtor,413,0.7554,0.7118,0.7944,0.4880,0.7332,0.7252
+Displaced,Not displaced,1637,0.4594,0.4354,0.4836,0.4610,0.4640,0.4588
+Displaced,Displaced,1993,0.3357,0.3153,0.3567,0.3346,0.3310,0.3306
+Daytime/evening attendance,Daytime,3222,0.3768,0.3602,0.3937,0.3736,0.3745,0.3734
+Daytime/evening attendance,Evening,408,0.5074,0.4590,0.5556,0.5335,0.5214,0.5070
+International,Not international,3544,0.3919,0.3760,0.4081,0.3914,0.3901,0.3877
+International,International,86,0.3721,0.2775,0.4777,0.4023,0.4276,0.4206

@@ -3,3 +3,6 @@ __pycache__/
 .ipynb_checkpoints/
 .venv/
 *.log
+# uv environment and reproduction outputs
+reference/
+reproduction_report.csv

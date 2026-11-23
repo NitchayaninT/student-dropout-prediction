@@ -1,0 +1,19 @@
+outcome,stage,tier,n,share
+Dropout,T0,Low (< 0.2),120,0.0844
+Dropout,T0,Medium (0.2 to 0.5),434,0.3054
+Dropout,T0,High (≥ 0.5),867,0.6101
+Dropout,T1,Low (< 0.2),155,0.1091
+Dropout,T1,Medium (0.2 to 0.5),110,0.0774
+Dropout,T1,High (≥ 0.5),1156,0.8135
+Dropout,T2,Low (< 0.2),128,0.0901
+Dropout,T2,Medium (0.2 to 0.5),92,0.0647
+Dropout,T2,High (≥ 0.5),1201,0.8452
+Graduate,T0,Low (< 0.2),1008,0.4563
+Graduate,T0,Medium (0.2 to 0.5),830,0.3757
+Graduate,T0,High (≥ 0.5),371,0.1679
+Graduate,T1,Low (< 0.2),1822,0.8248
+Graduate,T1,Medium (0.2 to 0.5),258,0.1168
+Graduate,T1,High (≥ 0.5),129,0.0584
+Graduate,T2,Low (< 0.2),1900,0.8601
+Graduate,T2,Medium (0.2 to 0.5),219,0.0991
+Graduate,T2,High (≥ 0.5),90,0.0407

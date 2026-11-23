@@ -1,0 +1,5 @@
+Rule (fixed before running): build a tabular VAE only if every PCA and UMAP map of some stage has trustworthiness (k = 10) below 0.90.
+T0: best map UMAP-15 with trustworthiness 0.907; PCA 0.865 -> at least one map keeps neighbourhoods
+T1: best map UMAP-15 with trustworthiness 0.929; PCA 0.815 -> at least one map keeps neighbourhoods
+T2: best map UMAP-15 with trustworthiness 0.942; PCA 0.814 -> at least one map keeps neighbourhoods
+Decision: VAE not justified; PCA and UMAP are kept.

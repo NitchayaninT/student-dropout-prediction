@@ -1,0 +1,10 @@
+stage,cluster,n,share_of_students,n_resolved,dropout_rate,ci_lo,ci_hi,enrolled_share,mean_oof_risk,distinguishing_features
+T0,1,3458,0.7816,2792,0.3145,0.2975,0.3319,0.1926,0.3155,Age at enrollment: 19.90 vs 23.27; Daytime attendance: 97% vs 89%; Displaced: 65% vs 55%; Application order: 1.91 vs 1.73
+T0,2,966,0.2184,838,0.6480,0.6150,0.6796,0.1325,0.6453,Application mode over 23 years old: 67% vs 18%; Mother's qualification basic education 1st cycle (4th/5th year): 54% vs 23%; Age at enrollment: 35.32 vs 23.27; Daytime attendance: 60% vs 89%
+T1,1,3380,0.7640,2698,0.2772,0.2607,0.2944,0.2018,0.2766,Units 1st sem grade: 12.73 vs 10.64; Approval ratio 1st sem: 0.84 vs 0.70; Units 1st sem (credited): 0.19 vs 0.71; Age at enrollment: 22.13 vs 23.27
+T1,2,753,0.1702,679,0.8866,0.8605,0.9083,0.0983,0.8836,Units 1st sem grade: 0.51 vs 10.64; Approval ratio 1st sem: 0.01 vs 0.70; Units 1st sem (approved): 0.05 vs 4.71; Units 1st sem (evaluations): 3.99 vs 8.30
+T1,3,291,0.0658,253,0.2806,0.2289,0.3390,0.1306,0.2883,Units 1st sem (credited): 8.55 vs 0.71; Units 1st sem (enrolled): 13.08 vs 6.27; Application mode change of course: 33% vs 7%; Units 1st sem (approved): 11.47 vs 4.71
+T2,1,3226,0.7292,2555,0.2329,0.2169,0.2497,0.2080,0.2307,Units 2nd sem grade: 12.76 vs 10.23; Approval ratio 2nd sem: 0.83 vs 0.66; Units 1st sem grade: 12.75 vs 10.64; Approval ratio 1st sem: 0.86 vs 0.70
+T2,2,700,0.1582,634,0.8801,0.8525,0.9031,0.0943,0.8779,Course Animation and Multimedia Design: 26% vs 5%; Units 1st sem grade: 0.07 vs 10.64; Approval ratio 1st sem: 0.00 vs 0.70; Units 2nd sem grade: 0.76 vs 10.23
+T2,3,270,0.0610,234,0.2692,0.2165,0.3295,0.1333,0.2606,Units 1st sem (credited): 8.81 vs 0.71; Units 2nd sem (credited): 6.84 vs 0.54; Units 1st sem (enrolled): 13.33 vs 6.27; Units 2nd sem (enrolled): 11.61 vs 6.23
+T2,4,228,0.0515,207,0.9903,0.9655,0.9973,0.0921,0.9806,Grade change: -10.20 vs -0.41; Units 2nd sem grade: 0.63 vs 10.23; Approval ratio 2nd sem: 0.02 vs 0.66; Units 2nd sem (approved): 0.12 vs 4.44

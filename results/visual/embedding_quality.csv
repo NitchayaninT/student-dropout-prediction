@@ -1,0 +1,13 @@
+stage,map,features,encoded_dims,trustworthiness_k10,outcome_agreement_2d,outcome_agreement_full,outcome_chance,cohort_agreement_2d,cohort_chance,programme_agreement_2d,programme_chance,pca_variance_2,pca_variance_10,umap_seed_knn_jaccard,flags_organising_map
+T0,PCA,19,118,0.8652,0.4342,0.4706,0.3847,0.1112,0.1025,0.1405,0.0801,0.3156,0.5969,,Displaced 0.30; Daytime/evening attendance 0.29; Gender 0.06
+T0,UMAP-15,19,118,0.9075,0.4315,0.4706,0.3847,0.1409,0.1025,0.2007,0.0801,0.3156,0.5969,,Daytime/evening attendance 0.42; Displaced 0.29; International 0.20
+T0,UMAP-30,19,118,0.9038,0.4356,0.4706,0.3847,0.1390,0.1025,0.1859,0.0801,0.3156,0.5969,0.1965,Daytime/evening attendance 0.39; Displaced 0.27; International 0.16
+T0,UMAP-50,19,118,0.8988,0.4359,0.4706,0.3847,0.1354,0.1025,0.1736,0.0801,0.3156,0.5969,,Daytime/evening attendance 0.36; Displaced 0.27; Scholarship holder 0.16
+T1,PCA,28,127,0.8151,0.5771,0.6026,0.3847,0.1415,0.1025,0.2403,0.0801,0.3359,0.6832,,Daytime/evening attendance 0.21; Displaced 0.21; Tuition fees up to date 0.13
+T1,UMAP-15,28,127,0.9288,0.5558,0.6026,0.3847,0.1540,0.1025,0.2994,0.0801,0.3359,0.6832,,Daytime/evening attendance 0.40; Displaced 0.28; Scholarship holder 0.23
+T1,UMAP-30,28,127,0.9249,0.5541,0.6026,0.3847,0.1561,0.1025,0.2893,0.0801,0.3359,0.6832,0.2994,Daytime/evening attendance 0.39; Displaced 0.28; Scholarship holder 0.21
+T1,UMAP-50,28,127,0.9241,0.5539,0.6026,0.3847,0.1493,0.1025,0.2814,0.0801,0.3359,0.6832,,Daytime/evening attendance 0.38; Displaced 0.27; Scholarship holder 0.20
+T2,PCA,36,135,0.8141,0.6356,0.6496,0.3847,0.1447,0.1025,0.2722,0.0801,0.4043,0.7287,,Tuition fees up to date 0.16; Daytime/evening attendance 0.15; Displaced 0.15
+T2,UMAP-15,36,135,0.9420,0.6150,0.6496,0.3847,0.1719,0.1025,0.3778,0.0801,0.4043,0.7287,,Daytime/evening attendance 0.48; Displaced 0.29; Scholarship holder 0.22
+T2,UMAP-30,36,135,0.9397,0.6098,0.6496,0.3847,0.1673,0.1025,0.3632,0.0801,0.4043,0.7287,0.2961,Daytime/evening attendance 0.47; Displaced 0.27; Scholarship holder 0.21
+T2,UMAP-50,36,135,0.9368,0.6115,0.6496,0.3847,0.1632,0.1025,0.3492,0.0801,0.4043,0.7287,,Daytime/evening attendance 0.42; Displaced 0.29; Scholarship holder 0.20
